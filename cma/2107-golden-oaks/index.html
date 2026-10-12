@@ -1,0 +1,900 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<meta name="description" content="Comparative market analysis and marketing plan for 2107 Golden Oaks Lane, Monterey — prepared by Bill & Andrew Phillips, Phillips Real Estate.">
+<meta property="og:title" content="2107 Golden Oaks Lane — Market Analysis">
+<meta property="og:description" content="Comparative market analysis and marketing plan for 2107 Golden Oaks Lane, Monterey — prepared by Bill & Andrew Phillips, Phillips Real Estate.">
+<meta property="og:image" content="https://tvhoa93942.github.io/pre-listings/cma/2107-golden-oaks/img/hero.jpg">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:,">
+<style>html{color-scheme:dark}body{padding:0}</style>
+<title>2107 Golden Oaks Lane</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&display=swap">
+<style>
+/* Layout: one forest-green stage, chapters stacked top to bottom, a sticky chapter rail on top; the price explorer is the centerpiece. */
+:root{
+  color-scheme:dark;
+  --stage:#0c2210; --stage2:#102b15; --panel:#163a1f; --panel2:#1b4524; --line:rgba(253,224,129,.16); --line2:rgba(244,239,223,.12);
+  --ink:#f4efdf; --muted:#b4c0b0; --gold:#fde081; --gold2:#d9b94a; --leaf:#7fbf5f; --forest:#184c1a;
+  --c-sold:#fde081; --c-pending:#6aaee6; --c-active:#f4efdf; --c-cancel:#e2695b; --c-info:#8f9d92;
+  --z-proven:rgba(253,224,129,.22); --z-reach:rgba(217,185,74,.12); --z-stall:rgba(226,105,91,.18); --z-under:rgba(127,191,95,.12);
+  --body:'Open Sans',"Helvetica Neue",Arial,sans-serif;
+  --maxw:1120px; --gutter:clamp(16px,4vw,48px);
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--stage);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+h1,h2,h3{margin:0;text-wrap:balance;line-height:1.08}
+p{margin:0}
+a{color:var(--gold)}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+input{font:inherit}
+img{max-width:100%}
+[hidden]{display:none!important}
+.disp{font-family:var(--body);font-stretch:75%;font-weight:800;letter-spacing:-.01em}
+.kicker{font-stretch:75%;font-weight:700;font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold2)}
+.num,.tabular{font-variant-numeric:tabular-nums}
+.wrap{max-width:var(--maxw);margin:0 auto;padding-inline:var(--gutter)}
+section{padding-block:clamp(56px,8vw,112px);border-top:1px solid var(--line2)}
+section:nth-of-type(even){background:var(--stage2)}
+.sec-h{display:flex;flex-direction:column;gap:12px;margin-bottom:40px;max-width:46ch}
+.sec-h h2{font-size:clamp(1.9rem,4vw,3rem)}
+.sec-h p{color:var(--muted);font-size:1.05rem}
+.lead{max-width:62ch;color:var(--ink);font-size:1.08rem}
+.muted{color:var(--muted)}
+
+/* chapter rail */
+.rail{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:rgba(12,34,16,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.rail .in{max-width:var(--maxw);margin:0 auto;padding-inline:var(--gutter);display:flex;align-items:center;gap:20px;min-height:54px}
+.brand{font-stretch:75%;font-weight:800;letter-spacing:.14em;font-size:.82rem;color:var(--gold);white-space:nowrap}
+.brand small{display:block;font-weight:600;letter-spacing:.12em;font-size:.6rem;color:var(--muted)}
+.rail nav{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none;flex:1;min-width:0}
+.rail nav::-webkit-scrollbar{display:none}
+.rail nav a{color:var(--muted);text-decoration:none;font-size:.78rem;font-weight:600;letter-spacing:.04em;padding:8px 10px;border-radius:6px;white-space:nowrap}
+.rail nav a.on{color:var(--gold);background:rgba(253,224,129,.08)}
+.rail nav a:hover{color:var(--ink)}
+.samplechip{font-size:.68rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#0c2210;background:var(--gold);padding:4px 9px;border-radius:999px;white-space:nowrap}
+
+/* hero */
+.hero{position:relative;overflow:hidden;border-top:0;padding-block:clamp(72px,11vw,150px) clamp(64px,9vw,120px);background:var(--stage)}
+.hero .bg{position:absolute;inset:0;background-image:url(img/hero.jpg);background-size:cover;background-position:center;opacity:.55}
+.hero .hv{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity 1.2s}
+.hero .hv.on{opacity:.6}
+.hero .glow{position:absolute;inset:0;background:linear-gradient(90deg,rgba(12,34,16,.92) 0%,rgba(12,34,16,.78) 45%,rgba(12,34,16,.35) 100%),linear-gradient(180deg,rgba(12,34,16,.1),var(--stage) 100%)}
+.hero .wm{position:absolute;right:-2vw;bottom:-6vw;font-stretch:75%;font-weight:800;font-size:clamp(9rem,28vw,26rem);line-height:1;color:transparent;-webkit-text-stroke:1px rgba(253,224,129,.14);pointer-events:none;user-select:none}
+.hero .wrap{position:relative}
+.hero h1{font-size:clamp(2.6rem,7.5vw,6.2rem);color:var(--ink);margin-top:14px}
+.hero h1 span{display:block;color:var(--gold);font-size:.42em;font-stretch:100%;font-weight:400;letter-spacing:.02em;margin-top:10px}
+.hero .meta{display:flex;flex-wrap:wrap;gap:28px;margin-top:34px;color:var(--muted);font-size:.95rem}
+.hero .meta b{display:block;color:var(--ink);font-weight:600}
+.samplebar{display:flex;gap:14px;align-items:flex-start;margin-bottom:28px;padding:12px 16px;border:1px solid var(--gold2);border-radius:10px;background:rgba(253,224,129,.07);max-width:72ch;font-size:.92rem}
+.samplebar .samplechip{margin-top:2px}
+.heroact{margin-top:34px}
+.watch{display:inline-flex;align-items:center;gap:10px;border:1px solid var(--gold);color:var(--gold);text-decoration:none;font-weight:700;font-size:.9rem;padding:10px 18px;border-radius:999px;background:rgba(12,34,16,.5)}
+.watch:hover{background:var(--gold);color:#0c2210}
+.watch span{font-size:.7rem}
+.scrollhint{margin-top:28px;color:var(--muted);font-size:.8rem;letter-spacing:.12em;text-transform:uppercase}
+.scrollhint kbd{font:inherit;border:1px solid var(--line);border-radius:4px;padding:1px 6px;color:var(--gold)}
+
+/* the number */
+.number{background:linear-gradient(180deg,var(--stage2),var(--forest) 140%)}
+.number .big{font-size:clamp(3rem,10vw,8rem);color:var(--gold);line-height:1;margin-top:10px;letter-spacing:-.02em}
+.number .big small{font-size:.5em;color:var(--gold2);font-weight:600;font-stretch:100%}
+.number .head{font-size:clamp(1.15rem,2.2vw,1.5rem);max-width:44ch;margin-top:22px;font-weight:600}
+.number .rat{max-width:68ch;color:var(--muted);margin-top:16px;font-size:1.02rem}
+.number .moxi{max-width:68ch;margin-top:18px;padding:12px 16px;border-left:2px solid var(--gold2);color:var(--muted);font-size:.92rem}
+.pills{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin-top:40px}
+.pill{border:1px solid var(--line);border-radius:12px;padding:16px 18px;background:rgba(0,0,0,.18)}
+.pill .n{font-stretch:75%;font-weight:800;font-size:2rem;color:var(--ink);line-height:1}
+.pill .l{font-size:.78rem;color:var(--muted);margin-top:8px;letter-spacing:.04em}
+
+/* market shift */
+.tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:28px}
+@media(max-width:700px){.tiles{grid-template-columns:1fr 1fr}}
+@media(max-width:440px){.tiles{grid-template-columns:1fr}}
+.tile{border:1px solid var(--line2);border-radius:12px;padding:16px;background:var(--panel)}
+.tile .n{font-stretch:75%;font-weight:800;font-size:2.1rem;color:var(--gold);line-height:1}
+.tile .l{font-size:.78rem;color:var(--muted);margin-top:8px;line-height:1.4}
+.points{display:grid;grid-template-columns:1fr 1fr;gap:12px 28px;margin:26px 0 0;padding:0;list-style:none}
+@media(max-width:760px){.points{grid-template-columns:1fr}}
+.points li{border-left:2px solid var(--gold2);padding-left:14px;font-size:.95rem;color:var(--muted)}
+.read-callout{margin-top:30px;border:1px solid var(--gold2);border-radius:14px;padding:20px 24px;background:rgba(253,224,129,.06);max-width:76ch;font-size:1.02rem}
+
+/* explorer */
+.explorer{display:grid;grid-template-columns:1.25fr .9fr;gap:36px;align-items:start}
+@media(max-width:860px){.explorer{grid-template-columns:1fr}}
+.scen{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:26px}
+@media(max-width:600px){.scen{grid-template-columns:1fr}}
+.scen button{text-align:left;border:1px solid var(--line);border-radius:12px;padding:14px 14px 12px;background:var(--panel);transition:border-color .15s,background .15s}
+.scen button .k{font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:700}
+.scen button .p{font-stretch:75%;font-weight:800;font-size:1.6rem;margin-top:4px;color:var(--ink)}
+.scen button.on{border-color:var(--gold);background:rgba(253,224,129,.1)}
+.scen button.on .p{color:var(--gold)}
+.scen button .t{font-size:.8rem;color:var(--muted);margin-top:6px;line-height:1.4}
+.line{position:relative;height:226px;margin:8px 0 0}
+.zones{position:absolute;left:0;right:0;top:130px;height:22px;border-radius:6px;overflow:hidden;display:flex}
+.zone{height:100%;position:absolute;top:0}
+.zone.under{background:var(--z-under)}.zone.proven{background:var(--z-proven)}.zone.reach{background:var(--z-reach);background-image:repeating-linear-gradient(135deg,transparent 0 6px,rgba(253,224,129,.14) 6px 7px)}.zone.stall{background:var(--z-stall)}
+.zlabel{position:absolute;top:160px;font-size:.64rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);white-space:nowrap;transform:translateX(-50%)}
+@media(max-width:640px){.zlabel{display:none}}
+.cm{position:absolute;top:124px;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;font-size:.66rem;color:var(--muted);font-weight:600;pointer-events:none}
+.cm span{position:absolute;left:50%;transform:translateX(-50%);bottom:14px;background:var(--stage);padding:0 3px;border-radius:3px;white-space:nowrap}
+.cm.r1 span{bottom:32px}.cm.r2 span{bottom:50px}.cm.r3 span{bottom:68px}.cm.r4 span{bottom:86px}.cm.r5 span{bottom:104px}
+.cm::before{content:"";position:absolute;left:50%;bottom:10px;width:1px;height:6px;background:var(--line)}
+.cm.r1::before{height:24px}.cm.r2::before{height:42px}.cm.r3::before{height:60px}.cm.r4::before{height:78px}.cm.r5::before{height:96px}
+.cm i{width:10px;height:10px;border-radius:50%;display:block;background:var(--c-sold);position:relative;top:-2px}
+.cm.pending i{background:transparent;border:2px solid var(--c-pending)}
+.cm.active i{background:transparent;border:2px solid var(--c-active);border-radius:2px;transform:rotate(45deg);width:9px;height:9px}
+.cm.info i{border-radius:2px;background:var(--c-info)}
+.cm.cancel i{background:var(--c-cancel);border-radius:2px}
+.cm.hi{color:var(--gold)}
+.line input[type=range]{position:absolute;left:0;right:0;top:122px;width:100%;margin:0;height:38px;background:transparent;-webkit-appearance:none;appearance:none;cursor:ew-resize}
+.line input[type=range]:focus{outline:none}
+.line input[type=range]::-webkit-slider-runnable-track{height:38px;background:transparent}
+.line input[type=range]::-moz-range-track{height:38px;background:transparent}
+.line input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:22px;height:38px;border-radius:7px;background:var(--gold);border:2px solid var(--stage);box-shadow:0 0 0 3px rgba(253,224,129,.35)}
+.line input[type=range]::-moz-range-thumb{width:22px;height:38px;border-radius:7px;background:var(--gold);border:2px solid var(--stage);box-shadow:0 0 0 3px rgba(253,224,129,.35)}
+.line input[type=range]:focus-visible::-webkit-slider-thumb{box-shadow:0 0 0 5px rgba(253,224,129,.55)}
+.flag{position:absolute;top:186px;transform:translateX(-50%);background:var(--gold);color:#0c2210;font-stretch:75%;font-weight:800;font-size:1.05rem;padding:3px 10px;border-radius:6px;white-space:nowrap;pointer-events:none}
+.flag::after{content:"";position:absolute;left:50%;top:-6px;transform:translateX(-50%);border:6px solid transparent;border-bottom-color:var(--gold);border-top:0}
+.axisends{display:flex;justify-content:space-between;font-size:.72rem;color:var(--muted);margin-top:4px}
+.linekey{display:flex;flex-wrap:wrap;gap:12px;font-size:.72rem;color:var(--muted);margin-top:10px}
+.read{border:1px solid var(--line);border-radius:14px;background:var(--panel);padding:22px 22px 18px;display:flex;flex-direction:column;gap:16px}
+.read .zonetag{display:inline-flex;align-items:center;gap:8px;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:var(--muted)}
+.read .zonetag i{width:10px;height:10px;border-radius:50%;background:var(--c-sold)}
+.read[data-zone=stall] .zonetag i{background:var(--c-cancel)}.read[data-zone=reach] .zonetag i{background:var(--gold2)}.read[data-zone=under] .zonetag i{background:var(--leaf)}
+.read h3{font-size:1.35rem}
+.read .netline{display:flex;justify-content:space-between;align-items:baseline;border-top:1px solid var(--line2);padding-top:14px;gap:12px;flex-wrap:wrap}
+.read .netline .v{font-stretch:75%;font-weight:800;font-size:2rem;color:var(--gold)}
+.read .nearby{display:flex;flex-direction:column;gap:6px;font-size:.86rem;color:var(--muted)}
+.read .nearby b{color:var(--ink);font-weight:600}
+.read .nearby span.chip{margin-left:6px}
+
+/* net sheet */
+.net{margin-top:48px;border:1px solid var(--line);border-radius:14px;background:var(--panel);overflow:hidden}
+.net .nh{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:16px 22px;border-bottom:1px solid var(--line2);flex-wrap:wrap}
+.net .nh h3{font-size:1.2rem}
+.net .nh p{color:var(--muted);font-size:.86rem}
+.inputs{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;padding:18px 22px;border-bottom:1px solid var(--line2);background:rgba(0,0,0,.14)}
+.inputs label{display:flex;flex-direction:column;gap:5px;font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:700}
+.inputs .f{display:flex;align-items:center;border:1px solid var(--line);border-radius:8px;background:var(--stage);padding:0 10px}
+.inputs .f span{color:var(--muted);font-size:.9rem}
+.inputs input{width:100%;min-width:0;background:transparent;border:0;color:var(--ink);padding:8px 4px;font-size:1rem;text-align:right}
+.inputs input:focus{outline:none}
+.inputs .f:focus-within{border-color:var(--gold)}
+.ntable{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:.93rem}
+.ntable th,.ntable td{padding:10px 14px;text-align:right;border-bottom:1px solid var(--line2);white-space:nowrap}
+.ntable th:first-child,.ntable td:first-child{text-align:left;color:var(--muted);font-weight:500}
+.ntable thead th{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.ntable thead th.you{color:var(--gold)}
+.ntable tr.total td{font-weight:800;font-stretch:75%;font-size:1.3rem;color:var(--gold);border-bottom:0;padding-top:14px}
+.ntable tr.total td:first-child{font-size:.95rem;font-stretch:100%;color:var(--ink);font-weight:600}
+.ntable td.you{background:rgba(253,224,129,.07)}
+.fine{padding:14px 22px;font-size:.78rem;color:var(--muted);line-height:1.5}
+
+/* evidence */
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px;align-items:center}
+.filters button{border:1px solid var(--line);border-radius:999px;padding:7px 14px;font-size:.82rem;font-weight:600;color:var(--muted)}
+.filters button.on{color:#0c2210;background:var(--gold);border-color:var(--gold)}
+.filters .sp{flex:1}
+.filters .view{color:var(--gold);font-size:.82rem;text-decoration:underline;text-underline-offset:3px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px}
+.comp{border:1px solid var(--line2);border-radius:14px;padding:0 18px 16px;background:var(--panel);display:flex;flex-direction:column;gap:6px;position:relative;transition:border-color .15s;overflow:hidden}
+.comp::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--c-sold);z-index:1}
+.comp.pending::before{background:var(--c-pending)}.comp.active::before{background:var(--c-active)}.comp.cancel::before{background:var(--c-cancel)}.comp.info::before{background:var(--c-info)}
+.comp.hi{border-color:var(--gold)}
+.comp .cph{width:calc(100% + 36px);margin:0 -18px 8px;aspect-ratio:16/9;object-fit:cover;display:block}
+.comp:not(:has(.cph)){padding-top:18px}
+.comphead{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.chip{display:inline-block;font-size:.66rem;letter-spacing:.08em;text-transform:uppercase;font-weight:700;padding:3px 8px;border-radius:999px;border:1px solid var(--c-sold);color:var(--c-sold)}
+.chip.pending{border-color:var(--c-pending);color:var(--c-pending)}.chip.active{border-color:var(--c-active);color:var(--c-active)}.chip.cancel{border-color:var(--c-cancel);color:var(--c-cancel)}.chip.info{border-color:var(--c-info);color:var(--c-info)}
+.cdom{font-size:.78rem;color:var(--muted);font-weight:600;white-space:nowrap}
+.cprice{font-stretch:75%;font-weight:800;font-size:1.9rem;line-height:1;margin-top:4px}
+.cprice small{font-size:.5em;font-stretch:100%;font-weight:600;color:var(--muted)}
+.caddr{font-weight:600}
+.cmeta{font-size:.8rem;color:var(--muted)}
+.cspecs{display:flex;gap:12px;font-size:.8rem;color:var(--muted);margin-top:4px;flex-wrap:wrap}
+.cspecs b{color:var(--ink);font-weight:700}
+.cnote{font-size:.88rem;color:var(--muted);margin-top:6px}
+.cwhy{font-size:.9rem;border-top:1px solid var(--line2);padding-top:10px;margin-top:4px}
+.comp.info .cprice,.comp.cancel .cprice,.comp.active .cprice{color:var(--muted)}
+.comp.pending .cprice{color:var(--c-pending)}
+.evtable{overflow-x:auto;border:1px solid var(--line2);border-radius:12px}
+.evtable th,.evtable td{padding:10px 12px;text-align:left;border-bottom:1px solid var(--line2);white-space:nowrap}
+.evtable th{font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.evtable td.num,.evtable th.num{text-align:right}
+.evnote{font-size:.84rem;color:var(--muted);margin-top:16px;max-width:70ch}
+
+/* charts */
+.charts{display:grid;grid-template-columns:repeat(auto-fit,minmax(420px,1fr));gap:18px}
+@media(max-width:460px){.charts{grid-template-columns:1fr}}
+.chartcard{border:1px solid var(--line2);border-radius:14px;background:var(--panel);padding:18px 18px 10px;min-width:0}
+.chartcard.wide{grid-column:1/-1}
+.chartcard h3{font-size:1.05rem;margin-bottom:4px}
+.chartcard p{font-size:.84rem;color:var(--muted);margin-bottom:10px;max-width:60ch}
+.chartbox{overflow-x:auto}
+.chart{width:100%;min-width:440px;height:auto;display:block;overflow:visible}
+.chartbox.tl .chart{min-width:640px}
+.chart .grid{stroke:var(--line2);stroke-width:1}
+.chart .axis{stroke:var(--line);stroke-width:1}
+.chart .tick{fill:var(--muted);font-size:12.5px;font-family:var(--body)}
+.chart .axlabel{fill:var(--muted);font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;font-family:var(--body)}
+.chart .band{fill:rgba(253,224,129,.13);stroke:rgba(253,224,129,.45);stroke-width:1;stroke-dasharray:3 3}
+.chart .recent{fill:rgba(106,174,230,.08)}
+.chart .bandlabel{fill:var(--gold2);font-size:12px;font-weight:700;font-family:var(--body)}
+.chart .ptlabel{fill:var(--ink);font-size:13px;font-weight:600;font-family:var(--body)}
+.chart .mk{fill:var(--c-sold);stroke:var(--stage);stroke-width:2}
+.chart .mk.pending{fill:var(--c-pending)}.chart .mk.cancel{fill:var(--c-cancel)}.chart .mk.info{fill:var(--c-info)}.chart .mk.active{fill:var(--c-active)}
+.chart .mk.ring{fill:var(--stage);stroke:var(--c-pending);stroke-width:2.5}
+.chart .mk.diamond{fill:var(--stage);stroke:var(--c-active);stroke-width:2}
+.chart .mk.xm{fill:none;stroke:var(--c-cancel);stroke-width:3}
+.chart .mk.hollow{fill-opacity:.25;stroke:currentColor;stroke-width:1}
+.chart .cut{stroke:var(--c-cancel);stroke-width:1.5;stroke-dasharray:2 3;opacity:.7}
+.chart .cutstart{fill:var(--c-cancel);opacity:.6}
+.chart .hit{fill:transparent}
+.chart .pt{cursor:pointer}.chart .pt:focus{outline:none}.chart .pt:hover .mk,.chart .pt:focus .mk{stroke:var(--gold)}
+.chart .bar{cursor:pointer}
+.chart .avgline{stroke:var(--gold2);stroke-width:2;stroke-dasharray:4 3}
+.legend{display:flex;flex-wrap:wrap;gap:14px;font-size:.76rem;color:var(--muted);margin-top:4px;padding-bottom:6px}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.legend i{width:10px;height:10px;border-radius:50%;background:var(--c-sold);display:inline-block;flex:none}
+.legend i.pending{background:transparent;border:2px solid var(--c-pending)}.legend i.active{background:transparent;border:2px solid var(--c-active);border-radius:2px;transform:rotate(45deg);width:8px;height:8px}.legend i.info{background:var(--c-info);border-radius:2px}.legend i.cancel{background:var(--c-cancel);border-radius:2px}
+.legend i.band{background:rgba(253,224,129,.3);border:1px dashed var(--gold2);border-radius:2px}.legend i.recent{background:rgba(106,174,230,.25);border-radius:2px}.legend i.cutk{background:none;border-top:2px dashed var(--c-cancel);border-radius:0;height:0;width:14px}
+.tip{position:fixed;z-index:50;pointer-events:none;background:#f4efdf;color:#0c2210;border-radius:10px;padding:10px 12px;font-size:.8rem;line-height:1.45;box-shadow:0 10px 30px rgba(0,0,0,.4);max-width:280px}
+.tip b{display:block;font-weight:700}
+.tip .tst{display:inline-block;font-size:.66rem;letter-spacing:.08em;text-transform:uppercase;font-weight:700;margin:2px 0 4px;color:#184c1a}
+.tip .trole{color:#548235;font-weight:600;margin-top:4px}
+
+/* home */
+.homegrid{display:grid;grid-template-columns:1.1fr .9fr;gap:36px;align-items:start}
+@media(max-width:860px){.homegrid{grid-template-columns:1fr}}
+.homephoto img,.homephoto video{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:14px;display:block;background:#000}
+.homephoto figcaption,.homephoto .vcap{font-size:.76rem;color:var(--muted);margin-top:8px}
+.homephoto .kicker{display:block;margin-bottom:8px}
+.specs{display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:10px;margin:0 0 28px}
+.spec{border:1px solid var(--line2);border-radius:10px;padding:12px;background:var(--panel)}
+.spec .n{font-stretch:75%;font-weight:800;font-size:1.4rem;line-height:1}
+.spec .l{font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-top:6px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-top:36px}
+@media(max-width:760px){.two{grid-template-columns:1fr}}
+.two h3{font-size:1.1rem;margin-bottom:14px;display:flex;align-items:center;gap:10px}
+.two h3 i{width:12px;height:12px;border-radius:50%;background:var(--gold);display:inline-block}
+.two h3 i.op{background:var(--leaf)}
+.list{display:flex;flex-direction:column;gap:12px}
+.item{border-left:2px solid var(--line);padding-left:14px}
+.item b{display:block;font-weight:700}
+.item p{color:var(--muted);font-size:.92rem}
+
+/* plan */
+.channels{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px}
+.ch{border:1px solid var(--line2);border-radius:12px;padding:16px;background:var(--panel)}
+.ch b{display:block;font-weight:700;margin-bottom:6px}
+.ch p{font-size:.9rem;color:var(--muted)}
+.tl{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:44px;border-top:1px solid var(--line)}
+@media(max-width:860px){.tl{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.tl{grid-template-columns:1fr}}
+.wk{padding:20px 18px 20px 0;position:relative}
+.wk::before{content:"";position:absolute;left:0;top:-1px;width:36px;height:3px;background:var(--gold)}
+.wk .w{font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold2);font-weight:700}
+.wk .lbl{font-stretch:75%;font-weight:800;font-size:1.5rem;margin:4px 0 10px}
+.wk ul{margin:0;padding-left:16px;color:var(--muted);font-size:.88rem;display:flex;flex-direction:column;gap:6px}
+.launch{margin-top:40px;border:1px solid var(--gold2);border-radius:14px;padding:22px 24px;background:rgba(253,224,129,.06);max-width:70ch}
+.launch .kicker{margin-bottom:8px}
+
+/* expect / why */
+.cad{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.cad .c{border-top:2px solid var(--gold);padding-top:14px}
+.cad .c b{display:block;font-stretch:75%;font-weight:800;font-size:1.3rem}
+.cad .c p{color:var(--muted);font-size:.9rem;margin-top:6px}
+.creds{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0 30px}
+.creds span{border:1px solid var(--line);border-radius:999px;padding:6px 12px;font-size:.8rem;font-weight:600;color:var(--gold)}
+.pillars{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.pillars .c{border:1px solid var(--line2);border-radius:12px;padding:18px;background:var(--panel)}
+.pillars .c b{display:block;margin-bottom:6px}
+.pillars .c p{color:var(--muted);font-size:.9rem}
+.tag{margin-top:30px;font-stretch:75%;font-weight:800;font-size:2.2rem;color:var(--gold);letter-spacing:.04em}
+
+/* next */
+.steps{counter-reset:s;display:flex;flex-direction:column;gap:0;max-width:60ch;margin:0 0 40px;padding:0}
+.steps li{list-style:none;counter-increment:s;display:flex;gap:18px;align-items:center;padding:14px 0;border-bottom:1px solid var(--line2);font-size:1.05rem}
+.steps li::before{content:counter(s);width:34px;height:34px;border-radius:50%;border:1px solid var(--gold);color:var(--gold);display:grid;place-items:center;font-stretch:75%;font-weight:800;flex:none}
+.contact{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px;border:1px solid var(--line);border-radius:14px;padding:24px;background:var(--forest)}
+.contact .k{font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold2);font-weight:700}
+.contact .v{font-weight:600;margin-top:4px;user-select:all}
+.contact .names{font-stretch:75%;font-weight:800;font-size:1.6rem;color:var(--gold);line-height:1.1}
+footer{padding:26px var(--gutter) calc(26px + env(safe-area-inset-bottom,0px));text-align:center;font-size:.74rem;color:var(--muted);border-top:1px solid var(--line2)}
+footer b{color:var(--gold);letter-spacing:.12em}
+:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+@media(prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}.comp,.scen button{transition:all .15s}}
+</style>
+
+
+</head>
+<body>
+<header class="rail"><div class="in">
+  <div class="brand">PHILLIPS REAL ESTATE<small>BILL &amp; ANDREW PHILLIPS</small></div>
+  <nav id="nav">
+    <a href="#number">The Number</a><a href="#market">The Market</a><a href="#explore">Price Explorer</a><a href="#evidence">Evidence</a><a href="#charts">Charts</a>
+    <a href="#home">Your Home</a><a href="#plan">Marketing Plan</a><a href="#expect">What to Expect</a><a href="#why">Why Phillips</a><a href="#next">Next Steps</a>
+  </nav>
+  <span class="samplechip" id="chip" hidden>Sample data</span>
+</div></header>
+
+<main>
+<section class="hero" id="cover">
+  <div class="bg"></div><video class="hv" id="hv" muted loop playsinline preload="none" aria-hidden="true"></video><div class="glow"></div>
+  <div class="wm disp" aria-hidden="true" id="wm"></div>
+  <div class="wrap">
+    <div class="samplebar" id="samplebar" hidden><span class="samplechip">First run</span><span id="samplenote"></span></div>
+    <div class="kicker">Comparative Market Analysis &amp; Marketing Plan</div>
+    <h1 class="disp" id="h-addr"></h1>
+    <div class="meta">
+      <div>Prepared exclusively for<b id="h-for"></b></div>
+      <div>Presented<b id="h-date"></b></div>
+      <div>By<b id="h-by"></b></div>
+    </div>
+    <div class="heroact"><a class="watch" id="watch" href="#home" target="_blank" rel="noopener"><span>&#9654;</span> Watch the aerial flythrough</a></div>
+    <div class="scrollhint">Scroll, or use <kbd>→</kbd> <kbd>←</kbd> to move through the chapters</div>
+  </div>
+</section>
+
+<section class="number" id="number"><div class="wrap">
+  <div class="kicker">Recommended list price</div>
+  <div class="big disp" id="rec-range"></div>
+  <p class="head" id="rec-head"></p>
+  <p class="rat" id="rec-rat"></p>
+  <p class="moxi" id="rec-moxi"></p>
+  <p class="moxi" id="rec-seller"></p>
+  <div class="pills" id="pills"></div>
+</div></section>
+
+<section id="market"><div class="wrap">
+  <div class="sec-h"><div class="kicker" id="mk-kicker"></div><h2 class="disp" id="mk-title"></h2><p id="mk-sub"></p></div>
+  <div class="tiles" id="tiles"></div>
+  <div class="chartcard wide"><h3>Every two-bedroom condo listing in Monterey this year — what happened, and when</h3><p>Sold units sit at their closing date; units under contract at their contract date; withdrawn, canceled and expired listings at the date they left the market; active listings at today. Dashed lines trace price reductions of 3% or more from the original list price.</p><div class="chartbox tl" id="ch-time"></div><div class="legend" id="lg0"></div></div>
+  <ul class="points" id="mk-points"></ul>
+  <div class="read-callout" id="mk-read"></div>
+</div></section>
+
+<section id="explore"><div class="wrap">
+  <div class="sec-h"><div class="kicker">Price explorer</div><h2 class="disp">Drag the price. See what Monterey buyers actually did there.</h2>
+    <p>All twenty listings are on the line. Your estimated net at any price updates below.</p></div>
+  <div class="explorer">
+    <div>
+      <div class="scen" id="scen"></div>
+      <div class="line" id="line">
+        <div class="zones" id="zones"></div>
+        <div id="cmarks"></div>
+        <div id="zlabels"></div>
+        <input type="range" id="price" aria-label="List price">
+        <div class="flag" id="flag"></div>
+      </div>
+      <div class="axisends"><span id="ax-lo"></span><span id="ax-hi"></span></div>
+      <div class="linekey legend" id="linekey"></div>
+    </div>
+    <div class="read" id="read">
+      <span class="zonetag"><i></i><span id="rz"></span></span>
+      <h3 id="rh"></h3>
+      <p class="muted" id="rb"></p>
+      <div class="nearby" id="rn"></div>
+      <div class="netline"><span class="muted">Estimated net to you at <b class="num" id="rnp"></b></span><span class="v num" id="rnet"></span></div>
+    </div>
+  </div>
+
+  <div class="net" id="net">
+    <div class="nh"><div><h3 class="disp">Seller net sheet</h3><p>Change any assumption; every column recalculates.</p></div><span class="kicker">Estimates</span></div>
+    <div class="inputs" id="inputs"></div>
+    <div class="ntable"><table id="ntable"></table></div>
+    <p class="fine" id="netnote"></p>
+  </div>
+</div></section>
+
+<section id="evidence"><div class="wrap">
+  <div class="sec-h"><div class="kicker">The evidence</div><h2 class="disp" id="ev-title">Twenty listings. Six set the price; three show where buyers are now.</h2>
+    <p>Matching sold units drive the valuation. Units under contract are the freshest read on the market. Actives and off-market listings show where buyers stopped. Different bath counts and financing outliers are shown for context and kept out of the math.</p></div>
+  <div class="filters" id="filters">
+    <button data-f="all" class="on">All</button><button data-f="core">Drives the price</button><button data-f="signal">Under contract now</button><button data-f="ceiling">Ceiling signals</button><button data-f="info">Informational</button>
+    <span class="sp"></span><button class="view" id="viewtoggle">Table view</button>
+  </div>
+  <div class="grid" id="compgrid"></div>
+  <div class="evtable" id="evtable" hidden></div>
+  <p class="evnote" id="evnote"></p>
+</div></section>
+
+<section id="charts"><div class="wrap">
+  <div class="sec-h"><div class="kicker">Three pictures</div><h2 class="disp">Price, time and size — with the recommendation drawn on.</h2>
+    <p>Hover any mark for the unit. The shaded strip is the recommended range.</p></div>
+  <div class="charts">
+    <div class="chartcard"><h3>Price vs. days on market</h3><p>The sales that closed fastest were priced inside the band from day one. Everything above $585,000 is still waiting or gone.</p><div class="chartbox" id="ch-dom"></div><div class="legend" id="lg1"></div></div>
+    <div class="chartcard"><h3>Price vs. size</h3><p>Size barely explains price in this set; timing and condition do. 2107 is on the small end, which is why the $/sq ft cross-check runs low.</p><div class="chartbox" id="ch-sqft"></div><div class="legend" id="lg2"></div></div>
+    <div class="chartcard wide"><h3>Price per square foot</h3><p>Cross-check only. Smaller units carry inflated $/sq ft, and unsold listings show asking $/sq ft, not what a buyer paid.</p><div class="chartbox" id="ch-ppsf"></div><div class="legend" id="lg3"></div></div>
+  </div>
+</div></section>
+
+<section id="home"><div class="wrap">
+  <div class="sec-h"><div class="kicker">Your home</div><h2 class="disp" id="home-h"></h2></div>
+  <div class="homegrid">
+    <div><p class="lead" id="home-lead"></p><div class="specs" id="specs" style="margin-top:28px"></div></div>
+    <div>
+      <figure class="homephoto" id="homephoto" style="margin:0"></figure>
+      <div class="homephoto" id="homevideo" style="margin-top:18px"></div>
+    </div>
+  </div>
+  <div class="two">
+    <div><h3><i></i>What sells it</h3><div class="list" id="strengths"></div></div>
+    <div><h3><i class="op"></i>Before launch</h3><div class="list" id="opps"></div></div>
+  </div>
+</div></section>
+
+<section id="plan"><div class="wrap">
+  <div class="sec-h"><div class="kicker">Marketing plan</div><h2 class="disp">Built for the first two weekends.</h2><p id="plan-intro"></p></div>
+  <div class="channels" id="channels"></div>
+  <div class="tl" id="tl"></div>
+  <div class="launch"><div class="kicker">Launch strategy</div><p id="launch"></p></div>
+</div></section>
+
+<section id="expect"><div class="wrap">
+  <div class="sec-h"><div class="kicker">What to expect</div><h2 class="disp">You will never wonder what is happening with your listing.</h2></div>
+  <div class="cad" id="cad"></div>
+</div></section>
+
+<section id="why"><div class="wrap">
+  <div class="sec-h"><div class="kicker">Why Phillips Real Estate</div><h2 class="disp" id="why-h"></h2><p id="why-lead"></p></div>
+  <div class="creds" id="creds"></div>
+  <div class="pillars" id="pillars"></div>
+  <div class="tag disp" id="why-tag"></div>
+</div></section>
+
+<section id="next"><div class="wrap">
+  <div class="sec-h"><div class="kicker">Next steps</div><h2 class="disp">Five things, in order.</h2></div>
+  <ol class="steps" id="steps"></ol>
+  <div class="contact" id="contact"></div>
+</div></section>
+</main>
+<footer id="foot"></footer>
+
+<script>
+const DATA = {"meta": {"title": "2107 Golden Oaks Lane", "prepared_for": "George Moore & Stella Kennedy", "date": "October 11, 2026", "as_of": "2026-10-11", "sample": false, "sample_note": ""}, "subject": {"address": "2107 Golden Oaks Lane", "city": "Monterey", "state": "CA", "zip": "93940", "community": "Golden Oaks Condominiums", "beds": "2", "baths": "1", "sqft": 802, "sqft_label": "802", "year": "1980", "hoa_monthly": "$545–625", "level": "Ground", "parking": "Assigned", "tax_annual": "$5,648", "apn": "001-943-005-000", "building": "Building 2", "type": "Condominium", "photo": "img/community.jpg", "photo_caption": "Golden Oaks Condominiums from the Phillips Real Estate flythrough. 2107 sits on the ground floor of Building 2; interior photography is step one of the plan.", "video": "img/flythrough.mp4", "video_poster": "img/poster.jpg", "lead": "A ground-floor two-bedroom at Golden Oaks — 802 square feet, built 1980, with a fireplace, central heat and an expanded, sunny patio looking over the pool and the landmark oaks, steps from parking and the laundry facilities. Position inside the complex is 2107's edge: the patio is the largest private outdoor space of any two-bedroom in this comp set, and the pool-and-oaks outlook is the one feature Golden Oaks buyers consistently pay for.", "strengths": [{"t": "Ground floor, single level", "d": "The two most recent 2/1 contracts in Monterey (Casanova #61, Dela Vina #103) were both ground-floor units. No stairs is a real buyer filter at this price point."}, {"t": "Expanded patio over the pool and oaks", "d": "Larger than any patio in the comp set. It photographs, it shows, and it is the lead image of the listing."}, {"t": "A 2020 VA loan that may be assumable", "d": "The unit was financed in March 2020 with a VA loan — rate and balance to confirm. If it is assumable, it is the single biggest lever in this market: Dela Vina #103 got full price in zero days on a 2.3% assumable."}, {"t": "Golden Oaks location", "d": "Minutes to Del Monte Center, Highway 1 and 68, Del Monte Beach and downtown. Heated pool, large parking lot and on-site laundry."}], "opportunities": [{"t": "Photography first", "d": "There are no photos of 2107 anywhere yet. Stills, 3D tour and floor plan get captured before anything else happens — buyers are screening online before they call."}, {"t": "Condition items from the walk-through", "d": "[Paint, flooring, kitchen and bath condition — to be listed after the walk-through.] Updated units in this set sold; the ones that needed work sat or were cut."}, {"t": "Confirm the facts", "d": "Current HOA dues and any pending assessment, parking assignment, the VA loan's rate and payoff. Order the HOA disclosure package (Civ. Code §4525) at signing."}]}, "recommendation": {"low": 529000, "high": 545000, "headline": "Priced where Monterey two-bedroom condos are going under contract this fall — not where they closed last spring.", "rationale": "Six matching two-bedroom sales closed since May at an average of $567,500. But the two spring sales averaged $617,500 and the four summer sales $542,500 — a 12% step down — and since September, 2/1 units have gone under contract only at $499,999 and $529,000, each after a $50,000–$89,000 cut and 100+ days on market. Golden Oaks itself has no 2026 sale: 2308, the same floor plan as 2107, was canceled twice at $589,900 and $598,000. The range puts 2107's ground-floor patio position at the top of the current band and below the five listings sitting unsold at $560,000 and up.", "moxi_note": "The market data indicates a straight average of $576,250 ($642/sq ft) across the sold comparables — a figure that weights April's sales the same as August's. Weighted to the last 90 days, the band is $500,000–$545,000.", "seller_note": "Purchased March 2020 for $440,000. At $539,000 that is a gross gain of about $99,000 — roughly 22% — before costs; the 2026 assessed value is $490,822."}, "pills": [{"n": "$542,500", "l": "average of the 4 summer sales (Jul–Aug)"}, {"n": "$514,500", "l": "average of the 2 fall 2/1 contracts (both after cuts)"}, {"n": "8 of 20", "l": "listings cut their price · avg −$39,000"}, {"n": "0", "l": "Golden Oaks sales in 2026 · 2308 canceled twice"}], "scenarios": [{"key": "attract", "name": "Attract the crowd", "price": 519000, "tagline": "Right where the last two 2/1 contracts landed. Built for multiple offers on the first weekend."}, {"key": "recommended", "name": "Recommended", "price": 539000, "tagline": "Top of the current band, credited for the ground-floor patio and pool outlook. Beats every sitting listing."}, {"key": "stretch", "name": "Stretch", "price": 559000, "tagline": "Inside the July–August closings, but joins five listings sitting at $560,000+. Plan a day-14 decision."}], "explorer": {"lo": 430000, "hi": 690000}, "zones": [{"a": 430000, "b": 500000, "cls": "under", "label": "Below every contract", "head": "Below every contract this year", "body": "No two-bedroom condo in this set has gone under contract below $499,999 in 2026. Pricing here invites a bidding war but starts below what buyers are already paying."}, {"a": 500000, "b": 545000, "cls": "proven", "label": "Current band", "head": "Where buyers are contracting now", "body": "Both 2/1 contracts since September landed here ($499,999 and $529,000), and so did the summer floor ($515,000–$540,000). The strongest, fastest position in today's market."}, {"a": 545000, "b": 585000, "cls": "reach", "label": "Summer band", "head": "Closed here in July–August — quiet since", "body": "$550,000–$565,000 closed in July and August (15 and 7 days), and $585,000 in May. Since September the only contract in this band is a remodeled two-bath unit at $575,000; three 2/1 listings here have sat 75–120 days."}, {"a": 585000, "b": 690000, "cls": "stall", "label": "Stall zone", "head": "Where listings have failed this year", "body": "2308 Golden Oaks canceled twice here ($589,900, then $598,000). Dela Vina #102 withdrawn at $588,000, #104 unsold at $595,000, #209 expired at $615,000, and 1210 Golden Oaks 259 days at $675,000."}], "market": {"kicker": "The last 90 days", "title": "The market moved under the spring comps.", "sub": "Twenty two-bedroom condo listings in Monterey since January, plotted by what happened and when. The spring closings are real, and they are no longer where buyers are.", "tiles": [{"n": "−12%", "l": "summer sale prices vs spring · avg $617,500 → $542,500"}, {"n": "$514,500", "l": "avg of the two 2/1 units under contract since Sept 1"}, {"n": "8 of 20", "l": "listings cut their price · average −$39,000 (−6.3%)"}, {"n": "149 days", "l": "average time on market for the 5 listings still unsold"}, {"n": "60 days", "l": "since the last two-bedroom closing in Monterey (Aug 12)"}, {"n": "0", "l": "Golden Oaks sales in 2026 · 2 canceled · 1 sitting at 259 days"}], "points": ["Sold-to-list ratios fell from 97–100% in spring to 92–100% in summer; two of the four summer sales closed at 92% of list.", "Every listing that launched above $575,000 since June has either been cut, withdrawn, canceled or is still sitting.", "The three units under contract now averaged 94 days and $45,000 in reductions before a buyer committed — pricing right on day one skips that.", "Sellers are offering concessions and rate buydowns across the set (eight listings mention them). A buydown credit is a cheaper lever than a price cut."], "read": "For 2107 this means the trailing average overstates value and the fall contracts understate what a well-positioned ground-floor unit can do — if it launches inside the current band with photography, tour and pricing all right on day one."}, "comps": [{"id": "cas85", "tag": "Cas 85", "address": "820 Casanova Ave #85", "complex": "Cypress Park", "status": "sold", "role": "core", "feature": true, "img": "img/cas85.jpg", "price": 585000, "list_price": 599000, "orig_list": 599000, "list_date": "2026-04-06", "date": "2026-05-08", "date_label": "Sold May 8, 2026", "sqft": 860, "beds": 2, "baths": "1", "dom": 12, "hoa": 490, "note": "Updated upstairs end unit overlooking the pool: shaker maple cabinets, granite, stainless, dual-pane windows. All cash.", "why": "The spring high-water mark for a 2/1 — updated, cash, 12 days. The same complex's next three outcomes were $540,000, $515,000 and a $499,999 contract."}, {"id": "gw265", "tag": "FP 265", "address": "300 Glenwood Circle #265", "complex": "Footprints on the Bay", "status": "sold", "role": "core", "feature": true, "img": "img/gw265.jpg", "price": 650000, "list_price": 665000, "orig_list": 665000, "list_date": "2025-12-08", "date": "2026-06-08", "date_label": "Sold Jun 8, 2026", "sqft": 879, "beds": 2, "baths": "1", "dom": 133, "hoa": 560, "note": "Upstairs end unit with gas fireplace and large balcony; complex has an indoor heated pool, fitness center and clubhouse.", "why": "The top of the set, but it took 133 days from a December launch and Footprints carries an amenity premium Golden Oaks doesn't. Context for the ceiling, not a target."}, {"id": "dv205", "tag": "DV 205", "address": "461 Dela Vina Ave #205", "complex": "Monterey Village", "status": "sold", "role": "core", "feature": true, "img": "img/dv205.jpg", "price": 550000, "list_price": 595000, "orig_list": 595000, "list_date": "2026-06-10", "date": "2026-07-15", "date_label": "Sold Jul 15, 2026", "sqft": 970, "beds": 2, "baths": "1", "dom": 15, "hoa": 600, "note": "Single-level 970 sq ft with fireplace, private patio, in-unit laundry and two parking spaces. All cash.", "why": "Sold in 15 days — at 92% of list. Buyers moved fast and still took $45,000 off. That is the summer pattern."}, {"id": "cas69", "tag": "Cas 69", "address": "820 Casanova Ave #69", "complex": "Cypress Park", "status": "sold", "role": "core", "feature": true, "img": "img/cas69.jpg", "price": 515000, "list_price": 525000, "orig_list": 449000, "list_date": "2026-04-21", "date": "2026-07-20", "date_label": "Sold Jul 20, 2026", "sqft": 860, "beds": 2, "baths": "1", "dom": 69, "hoa": 490, "note": "Multi-level plan: main-level bedroom and bath plus an upstairs bedroom. List price was raised from $449,000 to $525,000 after #85 closed.", "why": "Chased #85's $585,000 sale upward and still closed at $515,000 after 69 days. The floor of the summer band."}, {"id": "cas30", "tag": "Cas 30", "address": "820 Casanova Ave #30", "complex": "Cypress Park", "status": "sold", "role": "core", "feature": true, "img": "img/cas30.jpg", "price": 540000, "list_price": 584000, "orig_list": 584000, "list_date": "2026-05-16", "date": "2026-08-10", "date_label": "Sold Aug 10, 2026", "sqft": 860, "beds": 2, "baths": "1", "dom": 55, "hoa": 445, "note": "Fully furnished, updated kitchen with granite and stainless, loft-style second bedroom, wood floors, in-unit laundry.", "why": "Updated and furnished, listed at $584,000, closed at $540,000 — 92.5% of list after 55 days. The clearest single read on where an updated 2/1 lands today."}, {"id": "dv108", "tag": "DV 108", "address": "451 Dela Vina Ave #108", "complex": "Anchor Oaks", "status": "sold", "role": "core", "feature": true, "img": "img/dv108.jpg", "price": 565000, "list_price": 565000, "orig_list": 565000, "list_date": "2026-07-15", "date": "2026-08-12", "date_label": "Sold Aug 12, 2026", "sqft": 1026, "beds": 2, "baths": "1.5", "dom": 7, "hoa": 566, "note": "Updated 1,026 sq ft end unit with a half bath, Corian counters, walk-in closet, private patio. Sold as-is.", "why": "Priced at $565,000 and gone in 7 days at full price — but it is 1,026 sq ft with a half bath, so it is the top of the band, not the middle. Correct pricing still gets a fast, full-price sale."}, {"id": "dv103", "tag": "DV 103", "address": "461 Dela Vina Ave #103", "complex": "Monterey Village", "status": "sold", "role": "info", "feature": false, "img": "img/dv103.jpg", "price": 600000, "list_price": 599900, "orig_list": 599900, "list_date": "2026-05-10", "date": "2026-07-07", "date_label": "Sold Jul 7, 2026", "sqft": 900, "beds": 2, "baths": "1", "dom": 0, "hoa": 600, "note": "Ground-floor 900 sq ft with an assumable VA loan at 2.3% (about $366,900 balance).", "why": "Full price in zero days — because the buyer bought a 2.3% assumable loan, not just the unit. Excluded from the pricing math; it isn't repeatable."}, {"id": "go3104", "tag": "GO 3104", "address": "3104 Golden Oaks Lane", "complex": "Golden Oaks", "status": "sold", "role": "info", "feature": true, "img": "", "price": 435000, "list_price": null, "orig_list": null, "list_date": "2025-12-16", "date": "2025-12-16", "date_label": "Sold Dec 16, 2025 (county record)", "sqft": 656, "beds": 1, "baths": "1", "dom": null, "hoa": null, "note": "656 sq ft one-bedroom plan; recorded sale from the county record, so list price and days on market are not available.", "why": "The only Golden Oaks closing in the last twelve months: $663 per sq ft last December. Different size class, so it's informational — but $663/sq ft on 2107's 802 sq ft is $532,000, inside the range."}, {"id": "gw537", "tag": "OF 537", "address": "500 Glenwood Circle #537", "complex": "Ocean Forest", "status": "sold", "role": "info", "feature": false, "img": "img/gw537.jpg", "price": 605000, "list_price": 638000, "orig_list": 650000, "list_date": "2026-01-20", "date": "2026-04-27", "date_label": "Sold Apr 27, 2026", "sqft": 855, "beds": 2, "baths": "2", "dom": 56, "hoa": 644, "note": "Top-floor 2/2 with ocean and city-light views from both bedrooms; HOA covers all utilities. All cash; cut from $650,000.", "why": "Two baths and an ocean view, and it still needed a $45,000 cut to close in April. Shown for context — not a 2/1 comp."}, {"id": "cas61", "tag": "Cas 61", "address": "820 Casanova Ave #61", "complex": "Cypress Park", "status": "pending", "role": "signal", "feature": true, "img": "img/cas61.jpg", "price": 499999, "list_price": 499999, "orig_list": 589000, "list_date": "2026-06-08", "date": "2026-10-08", "date_label": "Pending Oct 8 · closes Nov 4", "sqft": 884, "beds": 2, "baths": "1", "dom": 122, "hoa": 490, "note": "Ground-floor, single-level Edgewood plan with an expansive private patio, new laminate and paint, full-size laundry, separate utility room.", "why": "The closest thing to 2107 in the set — ground floor, big patio, refreshed — and the freshest signal: listed at $589,000 in June, cut to $499,999, under contract October 8 after 122 days."}, {"id": "dv107", "tag": "DV 107", "address": "451 Dela Vina Ave #107", "complex": "Anchor Oaks", "status": "pending", "role": "signal", "feature": true, "img": "img/dv107.jpg", "price": 529000, "list_price": 529000, "orig_list": 579000, "list_date": "2026-06-24", "date": "2026-09-29", "date_label": "Contingent Sep 29 · closes Nov 2", "sqft": 1026, "beds": 2, "baths": "1.5", "dom": 97, "hoa": 566, "note": "Two-story 1,026 sq ft with a half bath, fresh paint and shampooed carpet; lender credit offered.", "why": "Same building as #108, which sold in 7 days at $565,000 in August. This one listed at $579,000 and went under contract at $529,000 after a $50,000 cut and 97 days — the market moved in between."}, {"id": "gw2111", "tag": "OF 2111", "address": "500 Glenwood Circle #2111", "complex": "Ocean Forest", "status": "pending", "role": "signal", "feature": true, "img": "img/gw2111.jpg", "price": 575000, "list_price": 575000, "orig_list": 585000, "list_date": "2026-08-17", "date": "2026-09-18", "date_label": "Contingent Sep 18 · closes Oct 19", "sqft": 789, "beds": 2, "baths": "2", "dom": 32, "hoa": 535, "note": "Remodeled ground-floor 2/2 directly across from the pool; dues include all utilities.", "why": "The only contract above $529,000 since July — a remodeled two-bath unit, after a $10,000 cut. It shows what a second bath and all-utilities dues are worth right now."}, {"id": "ramona", "tag": "Ramona 1", "address": "515 Ramona Court #1", "complex": "Ramona Court", "status": "active", "role": "ceiling", "feature": false, "img": "", "price": 529950, "list_price": 529950, "orig_list": 569000, "list_date": "2026-03-25", "date": "2026-10-11", "date_label": "Active · 200 days", "sqft": 900, "beds": 2, "baths": "1.5", "dom": 200, "hoa": 500, "note": "Single-story end unit with a wrap-around patio, indoor laundry and covered parking.", "why": "200 days, one $39,000 cut, still unsold at $529,950. The price has to be right on day one, not day 150."}, {"id": "cas58", "tag": "Cas 58", "address": "820 Casanova Ave #58", "complex": "Cypress Park", "status": "active", "role": "ceiling", "feature": false, "img": "", "price": 560000, "list_price": 560000, "orig_list": 560000, "list_date": "2026-06-25", "date": "2026-10-11", "date_label": "Active · 108 days", "sqft": 884, "beds": 2, "baths": "1", "dom": 108, "hoa": 490, "note": "884 sq ft with in-unit laundry; sale contingent on the seller finding a replacement home, showings limited.", "why": "Sitting at $560,000 for 108 days in the same complex that just went under contract at $499,999. Marks where Cypress Park's unsold inventory starts."}, {"id": "gw435", "tag": "OF 435", "address": "500 Glenwood Circle #435", "complex": "Ocean Forest", "status": "active", "role": "ceiling", "feature": false, "img": "", "price": 565000, "list_price": 565000, "orig_list": 595000, "list_date": "2026-07-01", "date": "2026-10-11", "date_label": "Active · 102 days", "sqft": 855, "beds": 2, "baths": "2", "dom": 102, "hoa": 709, "note": "2/2 with en-suite bath, patio access from both bedrooms; $709 dues cover all utilities.", "why": "Cut $30,000 and still 102 days unsold at $565,000 — even with two baths."}, {"id": "dv102", "tag": "DV 102", "address": "461 Dela Vina Ave #102", "complex": "Monterey Village", "status": "canceled", "role": "ceiling", "feature": false, "img": "img/dv102.jpg", "price": 588000, "list_price": 588000, "orig_list": 590000, "list_date": "2026-06-07", "date": "2026-10-05", "date_label": "Withdrawn Oct 5 · 120 days", "sqft": 900, "beds": 2, "baths": "1", "dom": 120, "hoa": 600, "note": "Ground-floor 900 sq ft with fireplace and two parking spaces; sale was subject to the seller's exchange.", "why": "Withdrawn October 5 after 120 days at $588,000. No 2/1 has gone under contract above $529,000 since July."}, {"id": "go2308a", "tag": "GO 2308", "address": "2308 Golden Oaks Lane", "complex": "Golden Oaks", "status": "canceled", "role": "ceiling", "feature": true, "img": "img/golden-oaks-sign.jpg", "price": 589900, "list_price": 589900, "orig_list": 589900, "list_date": "2026-04-03", "date": "2026-04-19", "date_label": "Canceled Apr 19 · 16 days", "sqft": 802, "beds": 2, "baths": "1", "dom": 16, "hoa": 625, "note": "2107's floor plan: 802 sq ft, gas fireplace, enclosed balcony with a bay glimpse through the oaks.", "why": "The same plan as 2107, listed at $589,900 in April and canceled after 16 days — then relisted higher (next card)."}, {"id": "go2308b", "tag": "GO 2308b", "address": "2308 Golden Oaks Lane (relisted)", "complex": "Golden Oaks", "status": "canceled", "role": "ceiling", "feature": true, "img": "img/golden-oaks-sign.jpg", "price": 598000, "list_price": 598000, "orig_list": 598000, "list_date": "2026-05-13", "date": "2026-09-21", "date_label": "Canceled Sep 21 · 131 days", "sqft": 802, "beds": 2, "baths": "1", "dom": 131, "hoa": 545, "note": "Relisted with new flooring, paint, range and microwave.", "why": "Relisted at $598,000, canceled after 131 days. Golden Oaks has not sold a unit in 2026; the ceiling inside the complex sits below $590,000."}, {"id": "dv104", "tag": "DV 104", "address": "461 Dela Vina Ave #104", "complex": "Monterey Village", "status": "active", "role": "ceiling", "feature": false, "img": "", "price": 595000, "list_price": 595000, "orig_list": 595000, "list_date": "2026-07-28", "date": "2026-10-11", "date_label": "Active · 75 days", "sqft": 900, "beds": 2, "baths": "1", "dom": 75, "hoa": 600, "note": "Designer remodel: Carrara marble shower, crown molding, new flooring, two assigned spaces.", "why": "The best-finished 2/1 in the set, 75 days at $595,000 and no contract. Finish quality alone isn't moving units above the band."}, {"id": "dv209", "tag": "DV 209", "address": "461 Dela Vina Ave #209", "complex": "Monterey Village", "status": "canceled", "role": "ceiling", "feature": false, "img": "", "price": 615000, "list_price": 615000, "orig_list": 615000, "list_date": "2026-03-07", "date": "2026-06-17", "date_label": "Expired Jun 17 · 58 days", "sqft": 970, "beds": 2, "baths": "1", "dom": 58, "hoa": 520, "note": "Vaulted ceilings, clerestory windows, 970 sq ft, new appliances and forced-air heat.", "why": "Expired in June at $615,000 while units around it sold for $550,000–$600,000."}, {"id": "go1210", "tag": "GO 1210", "address": "1210 Golden Oaks Lane", "complex": "Golden Oaks", "status": "active", "role": "ceiling", "feature": true, "img": "", "price": 675000, "list_price": 675000, "orig_list": 755000, "list_date": "2026-01-13", "date": "2026-10-11", "date_label": "Active · 259 days", "sqft": 900, "beds": 2, "baths": "2", "dom": 259, "hoa": 699, "note": "Fully remodeled second-floor 2/2 over the pool: Thomasville cabinetry, Carrara counters, oak floors. Seller offering a rate-buydown concession.", "why": "The showcase unit in the complex: $755,000 in January, $675,000 now, 259 days. Golden Oaks buyers are not paying for remodel premiums this year."}], "net_sheet": {"commission_pct": 5.0, "transfer_tax_per_1000": 1.1, "title_escrow_pct": 1.0, "hoa_transfer_fees": 500, "reports_misc": 600, "repairs": 0, "loan_payoff": 0, "notes": "Estimates for discussion only. Commission is negotiable and not set by law. Monterey County documentary transfer tax is $1.10 per $1,000; title, escrow and HOA fees are typical ranges and are confirmed at listing. Enter your loan payoff to see your net after the mortgage. Property-tax and HOA-dues prorations, and any buyer concessions or rate-buydown credits, are not included."}, "marketing": {"intro": "In this market a two-bedroom condo sells on the first two weekends or it joins the five listings averaging 149 days. Everything below is aimed at making launch weekend the biggest audience 2107 will ever have — at a price that beats the inventory sitting around it.", "channels": [{"t": "Photography, 3D tour & floor plan", "d": "Professional stills, a Giraffe360 virtual walkthrough and a measured floor plan, captured before the listing goes live. The patio-and-pool shot leads everything."}, {"t": "Aerial boundary video", "d": "A short flythrough showing where 2107 sits in Golden Oaks and how close Del Monte Center, the beach and downtown are. On the MLS, on social, and on the flyer by QR."}, {"t": "MLSListings + full syndication", "d": "Live on MLSListings on a Thursday with every photo and the tour attached, syndicated to Zillow, Realtor.com, Redfin, Homes.com and every brokerage site on the Peninsula."}, {"t": "Broker tour & agent outreach", "d": "Monterey County broker tour the first week, plus direct email to the agents on the last twelve two-bedroom condo transactions — their buyers who lost or walked are still looking."}, {"t": "The Phillips network", "d": "Terra Vista manages 40+ Peninsula associations, including Cypress Park and Footprints on the Bay. Residents and renters there hear about 2107 before the public does — a buyer pool no other brokerage can reach."}, {"t": "Flyer, social & email", "d": "Branded flyer with QR codes to the tour and video; 1080-square and story graphics; a launch email to the PRE buyer database and the Golden Oaks owner list."}, {"t": "Open houses", "d": "Both weekends after launch, with sign-in and same-day feedback to you. Second showings happen within 24 hours."}, {"t": "The rate lever", "d": "If the 2020 VA loan is assumable (VA loans generally are, with lender approval), it leads the remarks from day one — Dela Vina #103 got full price in zero days on a 2.3% assumable. If not, a pre-approved rate-buydown credit does the same job far cheaper than the $50,000 cuts the market is extracting from sellers who wait."}], "timeline": [{"week": "Week 0", "label": "Prepare", "items": ["Listing agreement signed; HOA disclosure package ordered (Civ. Code §4525)", "Paint, flooring and repair decisions made from the walk-through list", "Declutter, patio staged, pool-side angle cleared", "Photography, 3D tour, floor plan and aerial captured"]}, {"week": "Week 1", "label": "Launch", "items": ["Live on MLSListings Thursday; syndication confirmed Friday morning", "Broker tour", "Launch email, flyer and social graphics out", "First open house weekend; feedback to you Sunday night"]}, {"week": "Week 2", "label": "Build", "items": ["Second open house weekend", "Agent outreach to the buyers' agents on the last twelve 2-bed condo deals", "Day-14 checkpoint: showings, saves, views, feedback — in writing", "Offer review if offers are in hand"]}, {"week": "Weeks 3–4", "label": "Decide", "items": ["Offers negotiated, or a price decision made — never a silent drift", "HOA documents delivered to buyer; contingency clocks running", "Inspections and appraisal coordinated", "Day-30 written review"]}], "launch": "Launch on a Thursday with photos, tour and floor plan all live, price inside the range on this page, lead with the patio, and let the first two weekends do the work. Twenty Monterey two-bedroom listings this year tell one story: the ones priced inside the band sold in 7–15 days; the ones that reached were cut $39,000 on average and are still waiting."}, "expect": [{"t": "Every Monday", "d": "A one-page report: showings, online views and saves, open-house traffic, agent feedback, and what we recommend."}, {"t": "Within 24 hours", "d": "Feedback from every showing, good or bad, by text or call — you decide which."}, {"t": "Two agents", "d": "Bill and Andrew Phillips both cover 2107. One of us answers the phone every time."}, {"t": "Day 14 and day 30", "d": "A written pricing read with a recommendation. If the market is telling us something, you hear it from us first."}], "why_pre": {"headline": "We have sold this unit four times.", "lead": "Bill Phillips has sold 2107 Golden Oaks Lane four times — including to you — and formerly managed the Golden Oaks association. He is a CACM-certified HOA manager who, through Terra Vista HOA Management, runs more than forty Peninsula associations today. When a buyer's lender asks about Golden Oaks' reserves, special assessments or financials, the answer comes from someone who has sat on the management side of that table. Three generations of Phillips Real Estate on the Peninsula, since 1959.", "creds": ["Sold 2107 four times", "Former Golden Oaks HOA manager", "CACM certified", "HOA manager · 40+ associations", "Condo specialist", "Bill Phillips · DRE# 00625289", "Andrew Phillips · DRE# 02061112", "Since 1959"], "pillars": [{"t": "This unit, four times", "d": "We know the floor plan, the building, the patio and what buyers asked about every time 2107 sold. No learning curve on this listing."}, {"t": "Condo expert. HOA manager.", "d": "Bill formerly managed the Golden Oaks association and is CACM certified. We read HOA financials for a living: cleaner disclosures, fewer surprises in escrow, a buyer who closes."}, {"t": "Two agents, one listing", "d": "Bill and Andrew share every listing. Showings, calls and offers never wait for one person's calendar."}, {"t": "Pricing from evidence", "d": "Twenty-one listings, dated and sorted by what actually happened. The number on page one comes from the last 90 days, not a software average."}], "tag": "Manage. Lease. Sell."}, "next_steps": ["Agree on the list price range", "Sign the listing agreement (sent by DocuSign the same day)", "Confirm the VA loan's rate, balance and assumability with the servicer", "Order the Golden Oaks HOA disclosure package", "Schedule photography, 3D tour and floor plan — the aerial is done", "Pick the launch Thursday"], "contact": {"names": "Bill & Andrew Phillips", "firm": "Phillips Real Estate", "phone": "831-595-3967", "office": "831-372-8092", "email": "bill@billandred.com", "dre": "DRE# 00625289", "address": "337 El Dorado Street, Suite 3B, Monterey, CA 93940"}};
+/* Shared CMA logic — used by both the on-screen artifact and the print leave-behind.
+   Everything reads from the global DATA object injected by build.py. */
+
+const $$ = (sel, root) => Array.from((root || document).querySelectorAll(sel));
+const $ = (sel, root) => (root || document).querySelector(sel);
+const money = n => '$' + Math.round(n).toLocaleString('en-US');
+const moneyK = n => '$' + Math.round(n / 1000) + 'K';
+const esc = s => String(s == null ? '' : s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+const days = c => c.dom == null ? 'DOM n/a' : c.dom + ' days';
+const dnum = s => { const [y, m, d] = s.split('-').map(Number); return Date.UTC(y, m - 1, d); };
+const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+
+const STATUS = {
+  sold:     { label: 'Sold',           cls: 'sold',    shape: 'dot'     },
+  pending:  { label: 'Under contract', cls: 'pending', shape: 'ring'    },
+  active:   { label: 'Active',         cls: 'active',  shape: 'diamond' },
+  canceled: { label: 'Off market',     cls: 'cancel',  shape: 'x'       },
+  info:     { label: 'Informational',  cls: 'info',    shape: 'square'  }
+};
+const ROLE = {
+  core:    'Drives the price',
+  signal:  'Where buyers are now',
+  ceiling: 'Ceiling signal',
+  info:    'Not used in pricing'
+};
+const ROLE_ORDER = { core: 0, signal: 1, ceiling: 2, info: 3 };
+
+/* A comp's display status: the "info" role overrides its MLS status, because the point
+   of the label is "this one is not in the math". */
+function dispStatus(c) { return c.role === 'info' ? 'info' : c.status; }
+function cutPct(c) { return c.orig_list ? (c.price - c.orig_list) / c.orig_list : 0; }
+
+function derive(D) {
+  const core = D.comps.filter(c => c.role === 'core' && c.status === 'sold');
+  const signal = D.comps.filter(c => c.role === 'signal');
+  const unsold = D.comps.filter(c => c.status === 'active' || c.status === 'canceled');
+  const prices = core.map(c => c.price);
+  const avg = prices.reduce((a, b) => a + b, 0) / (prices.length || 1);
+  const avgPpsf = core.map(c => c.price / c.sqft).reduce((a, b) => a + b, 0) / (core.length || 1);
+  const doms = core.map(c => c.dom).filter(v => v != null).sort((a, b) => a - b);
+  const medDom = doms.length ? (doms.length % 2 ? doms[(doms.length - 1) / 2] : (doms[doms.length / 2 - 1] + doms[doms.length / 2]) / 2) : 0;
+  return { core, signal, unsold, avg, avgPpsf, medDom,
+           bandLow: Math.min(...prices), bandHigh: Math.max(...prices),
+           cuts: D.comps.filter(c => cutPct(c) <= -0.01) };
+}
+
+/* Where a price sits against the evidence: the zone it falls in (authored in data.json) and
+   every listing within $15,000 of it. */
+function evidenceAt(D, price) {
+  const z = D.zones.find(z => price >= z.a && price < z.b) || D.zones[D.zones.length - 1];
+  const near = D.comps.filter(c => Math.abs(c.price - price) <= 15000).sort((a, b) => dnum(b.date) - dnum(a.date));
+  return { zone: z.cls, label: z.label, head: z.head, body: z.body, near };
+}
+
+function netSheet(price, p) {
+  const commission = price * p.commission_pct / 100;
+  const transfer = price / 1000 * p.transfer_tax_per_1000;
+  const title = price * p.title_escrow_pct / 100;
+  const costs = commission + transfer + title + p.hoa_transfer_fees + p.reports_misc + p.repairs;
+  return { price, commission, transfer, title, hoa: p.hoa_transfer_fees, reports: p.reports_misc,
+           repairs: p.repairs, payoff: p.loan_payoff, costs, net: price - costs - p.loan_payoff };
+}
+
+/* ---------- SVG charts ---------- */
+const NS = 'http://www.w3.org/2000/svg';
+function el(tag, attrs, parent) {
+  const e = document.createElementNS(NS, tag);
+  for (const k in attrs) e.setAttribute(k, attrs[k]);
+  if (parent) parent.appendChild(e);
+  return e;
+}
+const tagOf = c => c.tag || c.address.split(' ')[0];
+
+function mark(g, shape, x, y, cls) {
+  const r = 6;
+  if (shape === 'dot') el('circle', { cx: x, cy: y, r, class: 'mk ' + cls }, g);
+  else if (shape === 'ring') el('circle', { cx: x, cy: y, r, class: 'mk ring ' + cls }, g);
+  else if (shape === 'diamond') el('path', { d: `M${x},${y - r - 1} L${x + r + 1},${y} L${x},${y + r + 1} L${x - r - 1},${y} Z`, class: 'mk diamond ' + cls }, g);
+  else if (shape === 'square') el('rect', { x: x - r + 0.5, y: y - r + 0.5, width: 2 * r - 1, height: 2 * r - 1, class: 'mk ' + cls }, g);
+  else el('path', { d: `M${x - r},${y - r} L${x + r},${y + r} M${x + r},${y - r} L${x - r},${y + r}`, class: 'mk xm ' + cls }, g);
+}
+
+function niceTicks(lo, hi, n) {
+  const span = hi - lo, raw = span / n, mag = Math.pow(10, Math.floor(Math.log10(raw)));
+  const step = [1, 2, 2.5, 5, 10].map(s => s * mag).find(s => s >= raw) || 10 * mag;
+  const t = []; for (let v = Math.ceil(lo / step) * step; v <= hi + 1e-9; v += step) t.push(v); return t;
+}
+
+function placeLabel(placed, lx, ly) {
+  let y = ly; placed.forEach(p => { if (Math.abs(p.x - lx) < 52 && Math.abs(p.y - y) < 14) y = p.y + 14; });
+  placed.push({ x: lx, y }); return y;
+}
+
+function bindTip(node, c, xKey) {
+  node.addEventListener('mouseenter', e => showTip(e, c, xKey));
+  node.addEventListener('mousemove', moveTip);
+  node.addEventListener('mouseleave', hideTip);
+  node.addEventListener('focus', e => showTip(e, c, xKey));
+  node.addEventListener('blur', hideTip);
+}
+
+/* Scatter of comps: xKey = 'dom' | 'sqft'. Band = recommended price range, drawn as a shaded strip. */
+function scatter(container, D, xKey, opts) {
+  opts = opts || {};
+  const W = opts.W || 640, H = opts.H || 380, m = { t: 28, r: 30, b: 46, l: 70 };
+  container.innerHTML = '';
+  const svg = el('svg', { viewBox: `0 0 ${W} ${H}`, class: 'chart', role: 'img', 'aria-label': opts.aria || '' }, container);
+  const comps = D.comps.filter(c => c[xKey] != null);
+  const xs = comps.map(c => c[xKey]), ys = comps.map(c => c.price), rec = D.recommendation;
+  const xlo = xKey === 'sqft' ? Math.floor(Math.min(...xs) / 50) * 50 - 50 : 0, xhi = Math.max(...xs) * 1.08;
+  const ylo = Math.min(...ys, rec.low) - 20000, yhi = Math.max(...ys, rec.high) + 20000;
+  const X = v => m.l + (v - xlo) / (xhi - xlo) * (W - m.l - m.r);
+  const Y = v => H - m.b - (v - ylo) / (yhi - ylo) * (H - m.t - m.b);
+  const g = el('g', {}, svg);
+  niceTicks(ylo, yhi, 5).forEach(v => {
+    el('line', { x1: m.l, x2: W - m.r, y1: Y(v), y2: Y(v), class: 'grid' }, g);
+    el('text', { x: m.l - 8, y: Y(v) + 4, class: 'tick', 'text-anchor': 'end' }, g).textContent = moneyK(v);
+  });
+  niceTicks(xlo, xhi, 6).forEach(v => el('text', { x: X(v), y: H - m.b + 18, class: 'tick', 'text-anchor': 'middle' }, g).textContent = v.toLocaleString());
+  el('line', { x1: m.l, x2: W - m.r, y1: H - m.b, y2: H - m.b, class: 'axis' }, g);
+  el('text', { x: (m.l + W - m.r) / 2, y: H - 8, class: 'axlabel', 'text-anchor': 'middle' }, g).textContent = xKey === 'dom' ? 'Days on market' : 'Square feet';
+  el('rect', { x: m.l, y: Y(rec.high), width: W - m.l - m.r, height: Y(rec.low) - Y(rec.high), class: 'band' }, g);
+  el('text', { x: W - m.r - 6, y: Y(rec.high) - 6, class: 'bandlabel', 'text-anchor': 'end' }, g).textContent = `Recommended ${moneyK(rec.low)}–${moneyK(rec.high)}`;
+  const pts = el('g', {}, svg), placed = [];
+  comps.slice().sort((a, b) => b.price - a.price).forEach(c => {
+    const st = STATUS[dispStatus(c)], x = X(c[xKey]), y = Y(c.price);
+    const pg = el('g', { class: 'pt', 'data-id': c.id, tabindex: 0 }, pts);
+    el('circle', { cx: x, cy: y, r: 16, class: 'hit' }, pg);
+    mark(pg, st.shape, x, y, st.cls);
+    if (opts.labels !== false && (opts.labelAll || c.feature)) {
+      const anchor = x > W - m.r - 70 ? 'end' : 'start', lx = anchor === 'end' ? x - 11 : x + 11;
+      el('text', { x: lx, y: placeLabel(placed, lx, y + 4), class: 'ptlabel', 'text-anchor': anchor }, pg).textContent = tagOf(c);
+    }
+    bindTip(pg, c, xKey);
+  });
+}
+
+/* Timeline: price against the date each listing reached its outcome. Sold at close, under
+   contract at contract date, off-market at the cancel/withdraw/expire date, active as of today.
+   A faint line from the original list price shows every reduction of 3% or more. */
+function timeline(container, D, opts) {
+  opts = opts || {};
+  const W = opts.W || 1000, H = opts.H || 440, m = { t: 26, r: 30, b: 44, l: 70 };
+  container.innerHTML = '';
+  const svg = el('svg', { viewBox: `0 0 ${W} ${H}`, class: 'chart', role: 'img', 'aria-label': 'Listing outcomes by date and price' }, container);
+  const dates = D.comps.flatMap(c => [dnum(c.date), dnum(c.list_date)]);
+  const first = new Date(Math.min(...dates));
+  const t0 = Date.UTC(first.getUTCFullYear(), first.getUTCMonth(), 1), t1 = Math.max(...dates) + 32 * 864e5;
+  const ys = D.comps.flatMap(c => [c.price, c.orig_list || c.price]);
+  const ylo = Math.floor((Math.min(...ys) - 15000) / 25000) * 25000, yhi = Math.ceil((Math.max(...ys) + 15000) / 25000) * 25000;
+  const X = t => m.l + (t - t0) / (t1 - t0) * (W - m.l - m.r);
+  const Y = v => H - m.b - (v - ylo) / (yhi - ylo) * (H - m.t - m.b);
+  const g = el('g', {}, svg);
+  niceTicks(ylo, yhi, 6).forEach(v => {
+    el('line', { x1: m.l, x2: W - m.r, y1: Y(v), y2: Y(v), class: 'grid' }, g);
+    el('text', { x: m.l - 8, y: Y(v) + 4, class: 'tick', 'text-anchor': 'end' }, g).textContent = moneyK(v);
+  });
+  for (let i = 0; i < 24; i++) {
+    const t = Date.UTC(first.getUTCFullYear(), first.getUTCMonth() + i, 1); if (t > t1) break;
+    const dt = new Date(t);
+    el('line', { x1: X(t), x2: X(t), y1: m.t, y2: H - m.b, class: 'grid' }, g);
+    el('text', { x: X(t) + 4, y: H - m.b + 18, class: 'tick' }, g).textContent = MONTHS[dt.getUTCMonth()] + (dt.getUTCMonth() === 0 || i === 0 ? ' ' + dt.getUTCFullYear() : '');
+  }
+  // last-90-days shading
+  const asOf = dnum(D.meta.as_of);
+  el('rect', { x: X(asOf - 90 * 864e5), y: m.t, width: X(asOf) - X(asOf - 90 * 864e5), height: H - m.t - m.b, class: 'recent' }, g);
+  el('text', { x: X(asOf) - 6, y: m.t + 14, class: 'bandlabel', 'text-anchor': 'end' }, g).textContent = 'Last 90 days';
+  el('line', { x1: X(asOf), x2: X(asOf), y1: m.t, y2: H - m.b, class: 'axis' }, g);
+  el('text', { x: X(asOf) + 4, y: H - m.b - 6, class: 'tick' }, g).textContent = 'today';
+  el('line', { x1: m.l, x2: W - m.r, y1: H - m.b, y2: H - m.b, class: 'axis' }, g);
+  // recommended band
+  const rec = D.recommendation;
+  el('rect', { x: m.l, y: Y(rec.high), width: W - m.l - m.r, height: Y(rec.low) - Y(rec.high), class: 'band' }, g);
+  el('text', { x: m.l + 6, y: Y(rec.high) - 6, class: 'bandlabel' }, g).textContent = `Recommended ${moneyK(rec.low)}–${moneyK(rec.high)}`;
+  // reduction paths
+  D.comps.filter(c => cutPct(c) <= -0.03).forEach(c => {
+    el('line', { x1: X(dnum(c.list_date)), y1: Y(c.orig_list), x2: X(dnum(c.date)), y2: Y(c.price), class: 'cut' }, g);
+    el('circle', { cx: X(dnum(c.list_date)), cy: Y(c.orig_list), r: 3, class: 'cutstart' }, g);
+  });
+  const pts = el('g', {}, svg), placed = [];
+  D.comps.slice().sort((a, b) => b.price - a.price).forEach(c => {
+    const st = STATUS[dispStatus(c)], x = X(dnum(c.date)), y = Y(c.price);
+    const pg = el('g', { class: 'pt', 'data-id': c.id, tabindex: 0 }, pts);
+    el('circle', { cx: x, cy: y, r: 16, class: 'hit' }, pg);
+    mark(pg, st.shape, x, y, st.cls);
+    if (opts.labels !== false && (opts.labelAll || c.feature)) {
+      const lx = x + 11;
+      el('text', { x: lx, y: placeLabel(placed, lx, y + 4), class: 'ptlabel' }, pg).textContent = tagOf(c);
+    }
+    bindTip(pg, c, 'date');
+  });
+}
+
+function ppsfBars(container, D, opts) {
+  opts = opts || {};
+  const comps = D.comps.slice().sort((a, b) => (b.price / b.sqft) - (a.price / a.sqft));
+  const W = opts.W || 640, rowH = opts.rowH || 26, m = { t: 12, r: 80, b: 30, l: 70 };
+  const H = m.t + m.b + rowH * comps.length;
+  container.innerHTML = '';
+  const svg = el('svg', { viewBox: `0 0 ${W} ${H}`, class: 'chart', role: 'img', 'aria-label': 'Price per square foot by listing' }, container);
+  const hi = Math.max(...comps.map(c => c.price / c.sqft)) * 1.08;
+  const X = v => m.l + v / hi * (W - m.l - m.r);
+  const d = derive(D);
+  niceTicks(0, hi, 5).forEach(v => {
+    el('line', { x1: X(v), x2: X(v), y1: m.t, y2: H - m.b, class: 'grid' }, svg);
+    el('text', { x: X(v), y: H - m.b + 16, class: 'tick', 'text-anchor': 'middle' }, svg).textContent = '$' + Math.round(v);
+  });
+  comps.forEach((c, i) => {
+    const st = STATUS[dispStatus(c)], v = c.price / c.sqft, y = m.t + i * rowH + 4;
+    const g = el('g', { class: 'bar', 'data-id': c.id, tabindex: 0 }, svg);
+    el('text', { x: m.l - 8, y: y + rowH / 2 + 1, class: 'tick', 'text-anchor': 'end' }, g).textContent = tagOf(c);
+    el('rect', { x: m.l, y, width: Math.max(2, X(v) - m.l), height: rowH - 8, rx: 3, class: 'mk ' + st.cls + (c.status !== 'sold' ? ' hollow' : '') }, g);
+    el('text', { x: X(v) + 8, y: y + rowH / 2 + 1, class: 'ptlabel' }, g).textContent = '$' + Math.round(v) + (c.status === 'sold' ? '' : ' list');
+    bindTip(g, c, 'sqft');
+  });
+  el('line', { x1: X(d.avgPpsf), x2: X(d.avgPpsf), y1: m.t - 4, y2: H - m.b, class: 'avgline' }, svg);
+  el('text', { x: X(d.avgPpsf) + 4, y: m.t + 2, class: 'bandlabel' }, svg).textContent = 'sold avg $' + Math.round(d.avgPpsf);
+}
+
+/* ---------- tooltip ---------- */
+let tipEl = null;
+function tip() { if (!tipEl) { tipEl = document.createElement('div'); tipEl.className = 'tip'; tipEl.hidden = true; document.body.appendChild(tipEl); } return tipEl; }
+function showTip(e, c) {
+  const t = tip(), st = STATUS[dispStatus(c)], cut = cutPct(c);
+  t.innerHTML = `<b>${esc(c.address)}</b><span class="tst ${st.cls}">${st.label} · ${ROLE[c.role]}</span>` +
+    `<div>${money(c.price)}${c.status !== 'sold' ? ' list' : ''} · ${c.beds}/${esc(c.baths)} · ${c.sqft.toLocaleString()} sf · $${Math.round(c.price / c.sqft)}/sf</div>` +
+    `<div>${days(c)} · ${esc(c.date_label)}</div>` + (cut <= -0.01 ? `<div>Reduced from ${money(c.orig_list)} (${Math.round(cut * 100)}%)</div>` : '') +
+    `<div class="trole">${esc(c.complex || '')}</div>`;
+  t.hidden = false; moveTip(e);
+}
+function moveTip(e) {
+  const t = tip(), pad = 14; let x = e.clientX + pad, y = e.clientY + pad; const r = t.getBoundingClientRect();
+  if (x + r.width > window.innerWidth - 8) x = e.clientX - r.width - pad;
+  if (y + r.height > window.innerHeight - 8) y = e.clientY - r.height - pad;
+  t.style.left = x + 'px'; t.style.top = y + 'px';
+}
+function hideTip() { if (tipEl) tipEl.hidden = true; }
+
+/* ---------- comp card + table row markup (shared by screen + print) ---------- */
+function compCard(c) {
+  const s = dispStatus(c), st = STATUS[s], cut = cutPct(c);
+  const pct = c.list_price && c.status === 'sold' ? Math.round(c.price / c.list_price * 1000) / 10 : null;
+  const meta = [c.date_label, pct !== null ? pct + '% of list' : null, cut <= -0.01 ? `cut ${Math.round(cut * 100)}% from ${money(c.orig_list)}` : null].filter(Boolean).join(' · ');
+  return `<article class="comp ${st.cls}" data-id="${c.id}" data-status="${s}" data-role="${c.role}">
+    ${c.img ? `<img class="cph" src="${c.img}" alt="">` : ''}
+    <div class="comphead"><span class="chip ${st.cls}">${st.label} · ${ROLE[c.role]}</span><span class="cdom">${days(c)}</span></div>
+    <div class="cprice">${money(c.price)}${c.status !== 'sold' ? '<small> list</small>' : ''}</div>
+    <div class="caddr">${esc(c.address)}</div>
+    <div class="cmeta">${esc(c.complex || '')} · ${esc(meta)}</div>
+    <div class="cspecs"><span><b>${c.beds}</b> bd</span><span><b>${esc(c.baths)}</b> ba</span><span><b>${c.sqft.toLocaleString()}</b> sf</span><span><b>$${Math.round(c.price / c.sqft)}</b> /sf</span>${c.hoa != null ? `<span><b>$${c.hoa}</b> HOA</span>` : ''}</div>
+    <p class="cnote">${esc(c.note)}</p>
+    <p class="cwhy">${esc(c.why)}</p>
+  </article>`;
+}
+
+function compRow(c) {
+  const s = dispStatus(c), st = STATUS[s], cut = cutPct(c);
+  return `<tr class="${st.cls}"><td>${esc(c.address)}</td><td><span class="chip ${st.cls}">${st.label}</span></td>
+    <td class="num">${money(c.price)}</td><td class="num">${cut <= -0.01 ? Math.round(cut * 100) + '%' : '—'}</td><td class="num">${c.beds}/${esc(c.baths)}</td><td class="num">${c.sqft.toLocaleString()}</td>
+    <td class="num">$${Math.round(c.price / c.sqft)}</td><td class="num">${c.dom == null ? '—' : c.dom}</td><td>${esc(c.date_label)}</td><td>${ROLE[c.role]}</td></tr>`;
+}
+const COMP_HEAD = `<tr><th>Address</th><th>Status</th><th class="num">Price</th><th class="num">Cut</th><th class="num">Bd/Ba</th><th class="num">Sq ft</th><th class="num">$/sf</th><th class="num">Days</th><th>Outcome</th><th>Role in pricing</th></tr>`;
+
+
+(function () {
+  const D = DATA, d = derive(D), C = D.contact, S = D.subject;
+  const byId = id => document.getElementById(id);
+
+  /* ----- hero / number ----- */
+  byId('wm').textContent = S.address.split(' ')[0];
+  byId('h-addr').innerHTML = `${esc(S.address)}<span>${esc(S.city)}, ${esc(S.state)} ${esc(S.zip)}</span>`;
+  byId('h-for').textContent = D.meta.prepared_for;
+  byId('h-date').textContent = D.meta.date;
+  byId('h-by').textContent = C.names + ' · ' + C.firm;
+  if (D.meta.sample) { byId('chip').hidden = false; byId('samplebar').hidden = false; byId('samplenote').textContent = D.meta.sample_note; }
+  byId('rec-range').innerHTML = `${money(D.recommendation.low)} <small>to</small> ${money(D.recommendation.high)}`;
+  byId('rec-head').textContent = D.recommendation.headline;
+  byId('rec-rat').textContent = D.recommendation.rationale;
+  if (D.recommendation.moxi_note) byId('rec-moxi').textContent = D.recommendation.moxi_note; else byId('rec-moxi').hidden = true;
+  if (D.recommendation.seller_note) byId('rec-seller').textContent = D.recommendation.seller_note; else byId('rec-seller').hidden = true;
+  // hero flythrough: wide screens only, and only when the viewer hasn't asked for reduced motion
+  const hv = byId('hv');
+  if (S.video && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    hv.src = S.video; hv.muted = true;
+    hv.addEventListener('playing', () => hv.classList.add('on'), { once: true });
+    hv.addEventListener('error', () => hv.classList.remove('on'));
+    const tryPlay = () => hv.play().catch(() => {});
+    tryPlay();
+    // if autoplay was refused, the first tap or scroll starts it
+    ['pointerdown', 'touchstart', 'scroll', 'keydown'].forEach(ev => window.addEventListener(ev, tryPlay, { once: true, passive: true }));
+  }
+  if (S.video) byId('watch').href = S.video; else byId('watch').hidden = true;
+  const pills = D.pills || [[money(d.avg), `average of ${d.core.length} matching sold units`], [`${moneyK(d.bandLow)}–${moneyK(d.bandHigh)}`, 'proven sold band']].map(([n, l]) => ({ n, l }));
+  byId('pills').innerHTML = pills.map(p => `<div class="pill"><div class="n num">${esc(p.n)}</div><div class="l">${esc(p.l)}</div></div>`).join('');
+
+  /* ----- market shift ----- */
+  const M0 = D.market;
+  byId('mk-kicker').textContent = M0.kicker; byId('mk-title').textContent = M0.title; byId('mk-sub').textContent = M0.sub;
+  byId('tiles').innerHTML = M0.tiles.map(t => `<div class="tile"><div class="n num">${esc(t.n)}</div><div class="l">${esc(t.l)}</div></div>`).join('');
+  timeline(byId('ch-time'), D, {});
+  byId('mk-points').innerHTML = M0.points.map(p => `<li>${esc(p)}</li>`).join('');
+  byId('mk-read').textContent = M0.read;
+
+  /* ----- explorer ----- */
+  const lo = D.explorer.lo, hi = D.explorer.hi;
+  const pct = v => ((v - lo) / (hi - lo) * 100).toFixed(2) + '%';
+  const range = byId('price');
+  range.min = lo; range.max = hi; range.step = 1000;
+  byId('ax-lo').textContent = money(lo); byId('ax-hi').textContent = money(hi);
+  byId('zones').innerHTML = D.zones.map(z => `<div class="zone ${z.cls}" style="left:${pct(z.a)};width:${((z.b - z.a) / (hi - lo) * 100).toFixed(2)}%"></div>`).join('');
+  byId('zlabels').innerHTML = D.zones.filter(z => (z.b - z.a) / (hi - lo) > 0.08).map((z, i) => `<span class="zlabel" style="left:${pct((z.a + z.b) / 2)};top:${i % 2 ? 176 : 160}px">${esc(z.label)}</span>`).join('');
+  // comp markers; labels step up a row when units sit within 4.5% of each other
+  const sorted = D.comps.slice().sort((a, b) => a.price - b.price);
+  const rowAt = [];
+  byId('cmarks').innerHTML = sorted.map(c => {
+    const st = STATUS[dispStatus(c)], x = (c.price - lo) / (hi - lo) * 100;
+    if (c.price < lo || c.price > hi) return '';
+    let r = 0; while (r < 5 && rowAt[r] !== undefined && x - rowAt[r] < 7) r++;
+    rowAt[r] = x;
+    return `<div class="cm ${st.cls} r${r}" data-id="${c.id}" style="left:${x.toFixed(2)}%"><span>${esc(tagOf(c))}</span><i></i></div>`;
+  }).join('');
+  const present = [...new Set(D.comps.map(dispStatus))];
+  const legendStatus = present.map(s => `<span><i class="${STATUS[s].cls}"></i>${STATUS[s].label}</span>`).join('');
+  byId('linekey').innerHTML = legendStatus;
+  const scen = byId('scen');
+  scen.innerHTML = D.scenarios.map(s => `<button data-key="${s.key}" data-price="${s.price}"><div class="k">${esc(s.name)}</div><div class="p num">${money(s.price)}</div><div class="t">${esc(s.tagline)}</div></button>`).join('');
+
+  /* ----- net sheet ----- */
+  const P = Object.assign({}, D.net_sheet);
+  const fields = [
+    ['commission_pct', 'Commission', '%', 0.25], ['transfer_tax_per_1000', 'Transfer tax / $1,000', '$', 0.05], ['title_escrow_pct', 'Title & escrow', '%', 0.1],
+    ['hoa_transfer_fees', 'HOA transfer & docs', '$', 50], ['reports_misc', 'Reports & misc.', '$', 50], ['repairs', 'Prep & repairs', '$', 500], ['loan_payoff', 'Loan payoff', '$', 1000]
+  ];
+  byId('inputs').innerHTML = fields.map(([k, l, u, step]) =>
+    `<label>${l}<span class="f">${u === '$' ? '<span>$</span>' : ''}<input type="number" id="in-${k}" value="${P[k]}" step="${step}" min="0">${u === '%' ? '<span>%</span>' : ''}</span></label>`).join('');
+  byId('netnote').textContent = D.net_sheet.notes;
+  fields.forEach(([k]) => byId('in-' + k).addEventListener('input', e => { const v = parseFloat(e.target.value); P[k] = isNaN(v) ? 0 : v; render(); }));
+
+  function renderNet(price) {
+    const cols = D.scenarios.map(s => ({ name: s.name, price: s.price, you: false })).concat([{ name: 'Your price', price, you: true }]);
+    const rows = cols.map(c => netSheet(c.price, P));
+    const line = (label, key, neg) => `<tr><td>${label}</td>${rows.map((r, i) => `<td class="num${cols[i].you ? ' you' : ''}">${neg ? '−' : ''}${money(r[key])}</td>`).join('')}</tr>`;
+    byId('ntable').innerHTML = `<thead><tr><th></th>${cols.map(c => `<th${c.you ? ' class="you"' : ''}>${esc(c.name)}</th>`).join('')}</tr></thead><tbody>` +
+      line('Sale price', 'price') + line(`Commission (${P.commission_pct}%)`, 'commission', true) + line('County transfer tax', 'transfer', true) +
+      line('Title, escrow & closing', 'title', true) + line('HOA transfer & documents', 'hoa', true) + line('Reports & misc.', 'reports', true) +
+      line('Prep & repairs', 'repairs', true) + line('Loan payoff', 'payoff', true) +
+      `<tr class="total"><td>Estimated net to seller</td>${rows.map((r, i) => `<td class="num${cols[i].you ? ' you' : ''}">${money(r.net)}</td>`).join('')}</tr></tbody>`;
+    return rows[rows.length - 1].net;
+  }
+
+  function render() {
+    const price = +range.value;
+    const flag = byId('flag'); flag.textContent = money(price); flag.style.left = pct(price);
+    const ev = evidenceAt(D, price);
+    const read = byId('read'); read.dataset.zone = ev.zone;
+    byId('rz').textContent = ev.label; byId('rh').textContent = ev.head; byId('rb').textContent = ev.body;
+    byId('rn').innerHTML = ev.near.length ? `<span class="kicker" style="font-size:.66rem">Within $15,000 of this price</span>` + ev.near.map(c => {
+      const st = STATUS[dispStatus(c)];
+      return `<div><b>${esc(tagOf(c))}</b> ${money(c.price)} · ${c.dom} days · ${esc(c.date_label)}<span class="chip ${st.cls}">${st.label}</span></div>`; }).join('')
+      : `<span class="muted">No listing within $15,000 of this price.</span>`;
+    const net = renderNet(price);
+    byId('rnp').textContent = money(price); byId('rnet').textContent = money(net);
+    $$('#scen button').forEach(b => b.classList.toggle('on', +b.dataset.price === price));
+    $$('#cmarks .cm').forEach(m => m.classList.toggle('hi', ev.near.some(c => c.id === m.dataset.id)));
+  }
+  range.addEventListener('input', render);
+  scen.addEventListener('click', e => { const b = e.target.closest('button'); if (!b) return; range.value = b.dataset.price; render(); });
+  range.value = (D.scenarios.find(s => s.key === 'recommended') || {}).price || D.recommendation.low;
+  render();
+
+  /* ----- evidence ----- */
+  const comps = D.comps.slice().sort((a, b) => ROLE_ORDER[a.role] - ROLE_ORDER[b.role] || dnum(b.date) - dnum(a.date));
+  byId('compgrid').innerHTML = comps.map(compCard).join('');
+  byId('evtable').innerHTML = `<table><thead>${COMP_HEAD}</thead><tbody>${comps.map(compRow).join('')}</tbody></table>`;
+  byId('evnote').textContent = `Only the ${d.core.length} matching sold units set the valuation (average ${money(d.avg)}, $${Math.round(d.avgPpsf)}/sf). Units under contract are the freshest market read; active and off-market listings are evidence of where buyers stop. Informational listings are excluded from every average.`;
+  byId('filters').addEventListener('click', e => {
+    const b = e.target.closest('button[data-f]'); if (!b) return;
+    $$('#filters button[data-f]').forEach(x => x.classList.toggle('on', x === b));
+    $$('#compgrid .comp').forEach(c => c.hidden = b.dataset.f !== 'all' && c.dataset.role !== b.dataset.f);
+  });
+  byId('viewtoggle').addEventListener('click', () => {
+    const t = byId('evtable'), g = byId('compgrid'); const showTable = t.hidden;
+    t.hidden = !showTable; g.hidden = showTable; byId('viewtoggle').textContent = showTable ? 'Card view' : 'Table view';
+  });
+
+  /* ----- charts ----- */
+  scatter(byId('ch-dom'), D, 'dom', { aria: 'Price against days on market' });
+  scatter(byId('ch-sqft'), D, 'sqft', { aria: 'Price against square feet' });
+  ppsfBars(byId('ch-ppsf'), D, { W: 960, rowH: 24 });
+  const legend = legendStatus + `<span><i class="band"></i>Recommended range</span>`;
+  byId('lg0').innerHTML = legend + `<span><i class="recent"></i>Last 90 days</span><span><i class="cutk"></i>Price reduction</span>`;
+  ['lg1', 'lg2', 'lg3'].forEach(id => byId(id).innerHTML = legend);
+  document.addEventListener('mouseover', e => { const p = e.target.closest('.pt,.bar'); $$('#compgrid .comp').forEach(c => c.classList.toggle('hi', !!p && c.dataset.id === p.dataset.id)); });
+
+  /* ----- home ----- */
+  byId('home-h').textContent = `${S.address}, ${S.city}`;
+  byId('home-lead').textContent = S.lead;
+  byId('specs').innerHTML = [[S.beds, 'Bed'], [S.baths, 'Bath'], [S.sqft_label || S.sqft, 'Sq ft'], [S.year, 'Built'], [S.hoa_monthly, 'HOA / mo'], [S.level, 'Level'], [S.parking, 'Parking']]
+    .map(([n, l]) => `<div class="spec"><div class="n num">${esc(n)}</div><div class="l">${l}</div></div>`).join('');
+  byId('homephoto').innerHTML = S.photo ? `<img src="${S.photo}" alt="${esc(S.community)}"><figcaption>${esc(S.photo_caption || '')}</figcaption>` : '';
+  byId('homevideo').innerHTML = S.video ? `<span class="kicker">Aerial flythrough</span><video controls preload="metadata" poster="${S.video_poster || ''}" src="${S.video}"></video><div class="vcap">Golden Oaks Condominiums and the surrounding Monterey hillside — the same flythrough runs on the MLS listing, on social and from the flyer by QR.</div>` : '';
+  byId('strengths').innerHTML = S.strengths.map(x => `<div class="item"><b>${esc(x.t)}</b><p>${esc(x.d)}</p></div>`).join('');
+  byId('opps').innerHTML = S.opportunities.map(x => `<div class="item"><b>${esc(x.t)}</b><p>${esc(x.d)}</p></div>`).join('');
+
+  /* ----- plan / expect / why / next ----- */
+  const M = D.marketing;
+  byId('plan-intro').textContent = M.intro;
+  byId('channels').innerHTML = M.channels.map(c => `<div class="ch"><b>${esc(c.t)}</b><p>${esc(c.d)}</p></div>`).join('');
+  byId('tl').innerHTML = M.timeline.map(w => `<div class="wk"><div class="w">${esc(w.week)}</div><div class="lbl disp">${esc(w.label)}</div><ul>${w.items.map(i => `<li>${esc(i)}</li>`).join('')}</ul></div>`).join('');
+  byId('launch').textContent = M.launch;
+  byId('cad').innerHTML = D.expect.map(x => `<div class="c"><b>${esc(x.t)}</b><p>${esc(x.d)}</p></div>`).join('');
+  const W = D.why_pre;
+  byId('why-h').textContent = W.headline; byId('why-lead').textContent = W.lead;
+  byId('creds').innerHTML = W.creds.map(c => `<span>${esc(c)}</span>`).join('');
+  byId('pillars').innerHTML = W.pillars.map(p => `<div class="c"><b>${esc(p.t)}</b><p>${esc(p.d)}</p></div>`).join('');
+  byId('why-tag').textContent = W.tag;
+  byId('steps').innerHTML = D.next_steps.map(s => `<li>${esc(s)}</li>`).join('');
+  byId('contact').innerHTML = `<div><div class="names">${esc(C.names)}</div><div class="muted" style="margin-top:4px">${esc(C.firm)}</div></div>` +
+    [['Mobile', C.phone], ['Office', C.office], ['Email', C.email], ['License', C.dre]].map(([k, v]) => `<div><div class="k">${k}</div><div class="v">${esc(v)}</div></div>`).join('');
+  byId('foot').innerHTML = `<b>PHILLIPS REAL ESTATE</b> · ${esc(C.address)} · ${esc(C.dre)} · Listing data from MLSListings and CRMLS as of ${esc(D.meta.date)}; comparable photos from their MLS listings. This analysis is a professional opinion of value, not an appraisal.`;
+
+  /* ----- chapter rail + keyboard ----- */
+  const secs = $$('main section'), links = $$('#nav a');
+  const io = new IntersectionObserver(es => es.forEach(x => { if (x.isIntersecting) links.forEach(l => l.classList.toggle('on', l.getAttribute('href') === '#' + x.target.id)); }), { rootMargin: '-40% 0px -55% 0px' });
+  secs.forEach(s => io.observe(s));
+  document.addEventListener('keydown', e => {
+    if (/input|textarea|select/i.test(e.target.tagName)) return;
+    if (!['ArrowRight', 'ArrowLeft', 'PageDown', 'PageUp'].includes(e.key)) return;
+    const y = window.scrollY + 80;
+    let i = secs.findIndex(s => s.offsetTop > y);
+    if (e.key === 'ArrowRight' || e.key === 'PageDown') { if (i === -1) return; }
+    else { i = secs.findIndex(s => s.offsetTop >= y - 2); i = (i === -1 ? secs.length : i) - 2; if (i < 0) i = 0; }
+    e.preventDefault(); secs[i].scrollIntoView({ behavior: 'smooth' });
+  });
+})();
+</script>
+
+</body>
+</html>
