@@ -720,6 +720,9 @@ const COMP_HEAD = `<tr><th>Address</th><th>Status</th><th class="num">Price</th>
   byId('mk-points').innerHTML = M0.points.map(p => `<li>${esc(p)}</li>`).join('');
   byId('mk-read').textContent = M0.read;
 
+  const present = [...new Set(D.comps.map(dispStatus))];
+  const legendStatus = present.map(s => `<span><i class="${STATUS[s].cls}"></i>${STATUS[s].label}</span>`).join('');
+
   /* ----- evidence ----- */
   const comps = D.comps.slice().sort((a, b) => ROLE_ORDER[a.role] - ROLE_ORDER[b.role] || dnum(b.date) - dnum(a.date));
   byId('compgrid').innerHTML = comps.map(compCard).join('');
