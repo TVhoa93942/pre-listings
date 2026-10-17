@@ -753,7 +753,7 @@ const COMP_HEAD = `<tr><th>Address</th><th>Status</th><th class="num">Price</th>
     .map(([n, l]) => `<div class="spec"><div class="n num">${esc(n)}</div><div class="l">${esc(l)}</div></div>`).join('');
   byId('homephoto').innerHTML = S.photo ? `<img src="${S.photo}" alt="${esc(S.community)}"><figcaption>${esc(S.photo_caption || '')}</figcaption>` : '';
   /* media: aerial/drone video, Giraffe360 3D tour, floor plan, extra photos — each optional (subject.video, subject.tour, subject.floor_plan, subject.gallery[]) */
-  const mediaLinks = [S.tour ? `<a class="btn" href="${esc(S.tour)}" target="_blank" rel="noopener">Open the 3D walkthrough</a>` : '',
+  const mediaLinks = [S.video ? `<a class="btn" href="${esc(S.video)}" target="_blank" rel="noopener">Open the fly-over video</a>` : '', S.tour ? `<a class="btn" href="${esc(S.tour)}" target="_blank" rel="noopener">Open the 3D walkthrough</a>` : '',
                  S.floor_plan ? `<a class="btn" href="${esc(S.floor_plan)}" target="_blank" rel="noopener">Floor plan</a>` : ''].join('');
   const gallery = (S.gallery || []).map(g => `<figure class="homephoto" style="margin:14px 0 0"><img src="${esc(g.src)}" alt="${esc(g.alt || g.caption || '')}" loading="lazy"><figcaption>${esc(g.caption || '')}</figcaption></figure>`).join('');
   byId('homevideo').innerHTML = (S.video ? `<span class="kicker">${esc(S.video_kicker || 'Aerial flythrough')}</span><video controls playsinline preload="metadata" poster="${S.video_poster || ''}" src="${S.video}"></video><div class="vcap">${esc(S.video_caption || '')}</div>` : '')
